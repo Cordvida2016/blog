@@ -1,0 +1,81 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 29/04/2015, 10:19:14
+    Author     : Daniel Egg
+*/
+
+@media screen and (max-width: 360px) {
+    #logo .img-responsive{
+        max-width: 25%;
+    }
+    #ehu-bar-content{
+        width: 73% !important;
+        font-size: 8px;
+    }
+}
+
+@media screen and (min-width: 360px) {
+    #logo .img-responsive{
+        max-width: 25%;
+    }
+    #ehu-bar-content{
+        width: 80% !important;
+        font-size: 10px;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    #logo .img-responsive{
+        max-width: 40%;
+    }
+    #ehu-bar-content{
+        width: 85% !important;
+        font-size: 10px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #logo .img-responsive{
+        max-width: 45%;
+    }
+    #ehu-bar-content{
+        width: 90% !important;
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 980px) {
+    #logo .img-responsive{
+        max-width: 65%;
+    }
+    #ehu-bar-content{
+        width: 80% !important;
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 940px;
+    }
+    #logo .img-responsive{
+        max-width: 100%;
+    }
+    #ehu-bar-content{
+        width: 80% !important;
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    #logo .img-responsive{
+        max-width: 100%;
+    }
+    #ehu-bar-content{
+        font-size: 12px;
+    }
+}

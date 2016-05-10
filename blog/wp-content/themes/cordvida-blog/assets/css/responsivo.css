@@ -1,0 +1,167 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 29/04/2015, 10:19:14
+    Author     : Daniel Egg
+*/
+
+@media screen and (max-width: 360px) {
+    #logo .img-responsive{
+        max-width: 25%;
+    }
+    #ehu-bar-content{
+        width: 73% !important;
+        font-size: 8px;
+    }
+    #rodape .tel-rodape{
+        font-size: 23px !important;
+    }
+    #rodape .logo-rodape{
+        background-position: 1px center, center center !important;
+    }
+}
+
+@media screen and (min-width: 360px) {
+    #logo .img-responsive{
+        max-width: 25%;
+    }
+    #ehu-bar-content{
+        width: 80% !important;
+        font-size: 10px;
+    }
+    #rodape .tel-rodape{
+        font-size: 27px !important;
+    }
+    #rodape .logo-rodape{
+        background-position: 20px center, center center !important;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    #logo .img-responsive{
+        max-width: 40%;
+    }
+    #ehu-bar-content{
+        width: 85% !important;
+        font-size: 10px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #logo .img-responsive{
+        max-width: 45%;
+    }
+    #ehu-bar-content{
+        width: 90% !important;
+        font-size: 12px;
+    }
+    #rodape .tel-rodape{
+        font-size: 36px !important;
+    }
+    #rodape .facebbok a,
+    #rodape .twitter a,
+    #rodape .instagram a{
+        background-size: 100% auto, 100% auto !important;
+        background-position: center center, center center !important;
+    }
+    #rodape .logo-rodape{
+        background-position: 0px center, center center !important;
+    }
+}
+
+@media screen and (min-width: 980px) {
+    #logo .img-responsive{
+        max-width: 65%;
+    }
+    #ehu-bar-content{
+        width: 80% !important;
+        font-size: 12px;
+    }
+    #rodape .logo-rodape{
+        background-position: 0px center, center center !important;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 940px;
+    }
+    #logo .img-responsive{
+        max-width: 100%;
+    }
+    #ehu-bar-content{
+        width: 80% !important;
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    #logo .img-responsive{
+        max-width: 100%;
+    }
+    #ehu-bar-content{
+        font-size: 12px;
+    }
+}
+
+#menu-resp .navbar{
+    background-color: #993043;
+    border: medium none;
+    border-radius: 0;
+    margin-bottom: 0;
+    min-height: 0;
+}
+#menu-resp .navbar-brand, .navbar-nav > li > a{
+    text-shadow: none;
+}
+#menu-resp .navbar-nav > li > a{
+    padding-bottom: 0;
+    padding-top: 0;
+    line-height: 39px;
+    color: #fff;
+    text-transform: uppercase;
+}
+#menu-resp .navbar-toggle{
+    background-color: #fff;
+}
+#menu-resp .navbar-toggle .icon-bar{
+    background-color: #993043;
+}
+#menu-resp .menu-item-13 a:hover{
+    background-color: #f4d57d;
+}
+#menu-resp .menu-item-20 a:hover{
+    background-color: #cde5f3;
+}
+#menu-resp .menu-item-14 a:hover{
+    background-color: #d6bfdc;
+}
+#menu-resp .menu-item-15 a:hover{
+    background-color: #93d0cf;
+}
+#menu-resp .menu-item-31 a:hover{
+    background-color: #e0ebc4;
+}
+#menu-resp #searchform .screen-reader-text {
+    display: none;
+}
+#menu-resp #s {
+    border: medium none;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-top: 6px;
+    padding: 5px 8px;
+    width: 145px;
+}
+#menu-resp #searchsubmit{
+    background: url("../img/ico-busca.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: medium none;
+    height: 32px;
+    position: relative;
+    right: 37px;
+    text-indent: -999999em;
+    width: 32px;
+}

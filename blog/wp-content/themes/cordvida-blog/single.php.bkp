@@ -1,0 +1,106 @@
+<?php
+/**
+ * The Template for displaying all single posts
+ *
+ * @package WordPress
+ * @subpackage TT Host Padrão
+ * @since TT Host 1.0
+ */
+get_header(); ?>
+
+    <div id="main" <?php post_class('container') ?>>
+        <div class="row">
+            <div class="col-md-7 content-post">
+                <?php while (have_posts()) : the_post(); 
+                    $viewPost = get_post(); //print_r($viewPost);die;
+                    $category = get_the_category($viewPost->ID); //print_r($category);die; ?>
+                    <article>
+                        <header>
+                            <h1><?php the_title(); ?></h1>            
+                        </header>
+
+                        <p id="conteudo">
+                            <?php the_content(); ?>
+                        </p>
+
+                        <footer>
+                            <?php edit_post_link('Editar', '<p>', '</p>'); ?>
+                        </footer>
+                    </article>
+                <?php endwhile; ?>
+				
+                <div class="clearfix"></div>
+
+                <div class="largo">
+                    <label for="assine" class="cta-texto largo">
+                        <h2>Inscreva-se agora no blog CordVida</h2>
+                        + de 5.000 mães recebem nosso conteúdo sobre gravidez e saúde familiar. Cadastre seu e-mail e acompanhe você também!
+                    </label>
+
+                    <script charset="utf-8" src="//js.hsforms.net/forms/current.js"></script>
+                    <script>
+                      hbspt.forms.create({ 
+                        portalId: '457831',
+                        formId: '421c6631-c2a1-4ccc-8b75-80370e0e3b30',
+                        css:''
+                      });
+                    </script>
+
+                </div>
+                
+                <div class="clearfix"></div>
+                
+                <div class="cta-posts">
+
+
+                    <?php 
+                    /*// The Query
+                    query_posts( 'cat=8&posts_per_page=1&orderby=rand' );
+
+                    // The Loop
+                    while ( have_posts() ) : the_post(); 
+                        $dadosPost = get_post(); 
+                        $link_cta = get_post_meta( $dadosPost->ID, 'link_cta' ); 
+                        if (has_post_thumbnail()) : */ ?>
+                            <!-- <a href="<?php //echo $link_cta[0]; ?>">
+                                <?php //the_post_thumbnail( 'full', array( 'alt' => $dadosPost->post_title, 'class' => 'img-responsive' ) ); ?>
+                            </a> -->
+                        <?php //endif; ?>
+                    <?php 
+                    //endwhile; 
+                    
+                    // Reset Query
+                    //wp_reset_query(); ?>
+                </div><!-- cta-posts -->
+                
+                <div class="clearfix"></div>
+                
+                <div class="posts-rel">
+                    <h3>Posts Relacionados</h3>
+                    <ul>
+                    <?php 
+                    
+                    // The Query
+                    query_posts( 'cat='. $category[0]->cat_ID .'&posts_per_page=5&orderby=ID&order=DESC&post__not_in='. $viewPost->ID .'' );
+                    
+                    // The Loop
+                    while ( have_posts() ) : the_post(); ?>
+                        <li>
+                            <a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a>
+                        </li>
+                    <?php 
+                    endwhile;
+                    
+                     // Reset Query
+                    wp_reset_query(); ?>
+                    </ul>
+                </div>
+                
+            </div><!-- content-post -->
+            <section id="sidebar" class="col-md-4 col-md-offset-1">
+                <?php get_sidebar(); ?>
+            </section><!-- #sidebar -->
+        </div>
+    </div>
+
+<?php get_footer(); ?>
