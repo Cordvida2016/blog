@@ -1,0 +1,99 @@
+<?php
+/* 
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+?>
+
+<section id="sidebar-content" class="row">
+    <div class="col-md-12">
+        <div id="newsletter">
+            <h5>+ de 5.000 mães estão acompanhando nosso conteúdo! Cadastre seu e-mail e Junte-se a elas!</h5>
+            <div class="clearfix"></div>
+            <?php //echo do_shortcode('[contact-form-7 id="36" title="newsletter"]') ?>
+            <script charset="utf-8" src="//js.hsforms.net/forms/current.js"></script>
+            <script>
+              hbspt.forms.create({ 
+                portalId: '457831',
+                formId: '3ceb9e5f-d1c2-4983-b8d4-4cf6bd629868',
+		css:''
+              });
+            </script>
+        </div>
+        
+        <div class="clearfix"></div>
+        
+        <div id="txt-blog">
+            <?php 
+            // The Query
+            query_posts( 'page_id=37' );
+
+            while ( have_posts() ) : the_post(); ?>
+                <?php the_content(); ?>
+            <?php 
+            endwhile; 
+
+            // Reset Query
+            wp_reset_query(); ?>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <div id="ebook">
+            <?php 
+            /*// The Query
+            query_posts( 'cat=7&posts_per_page=1&orderby=rand' );
+
+            // The Loop
+            while ( have_posts() ) : the_post(); 
+                $dadosPost = get_post(); 
+                $link_cta = get_post_meta( $dadosPost->ID, 'link_cta' ); 
+                if (has_post_thumbnail()) : */ ?>
+                    <!-- <a href="<?php //echo $link_cta[0]; ?>">
+                        <?php //the_post_thumbnail( 'full', array( 'alt' => $dadosPost->post_title ) ); ?>
+                    </a> -->
+                <?php //endif; ?>
+            <?php 
+            //endwhile; 
+            
+            // Reset Query
+            //wp_reset_query(); ?>
+        </div>
+
+        <!--h4>NOTÍCIAS PELO MUNDO</h4-->
+        <?php 
+        // The Query
+        query_posts( 'cat=6&posts_per_page=1' );
+
+        if ( have_posts() ) : ?>
+
+            <div id="noticias-mundo">
+                <?php 
+                // The Loop
+                while ( have_posts() ) : the_post(); ?>
+                    <article id="posts-depoimentos">
+                        <span class="tag"><?php echo get_cat_name(6)  ?></span>
+                        <?php if ( has_post_thumbnail() ) : ?>
+                            <a class="post-thumbnail" href="<?php the_permalink(); ?>">
+                                <?php the_post_thumbnail('large', array('alt' => get_the_title(),'class'=>'img-responsive')); ?>
+                            </a>
+                        <?php endif; ?>
+                        <?php the_excerpt(); ?>
+                    </article>
+                <?php 
+                endwhile; ?>
+
+            </div><!-- #noticias-mundo -->
+        <?php 
+        
+        endif;
+        // Reset Query
+        wp_reset_query(); ?>
+
+        <div class="clearfix"></div>
+
+        <!-- Widget -->
+        <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Sidebar')) : ?><?php endif; ?>
+    </div>
+</section>
