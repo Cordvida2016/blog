@@ -1,0 +1,35 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+/*
+ * Widgetkit Accordion: Botão Vermelho Style
+ */
+
+
+/* Toogler
+----------------------------------------------------------------------------------------------------*/
+
+.wk-accordion-default { margin-bottom: -10px;}
+
+.bt-vermelho { display:inline-block; }
+
+.bt-toggler {
+	box-shadow:0 2px 0 rgba(255,255,255,0.7) inset,
+	0 0 10px rgba(0,14,41,0.05) inset,
+	0 1px 1px rgba(0,14,41,0.04),
+	0 7px 4px -4px rgba(0,14,41,0.08);
+	border: 1px solid rgba(0,17,51,0.14) !important;
+	border-top-color: rgba(0,17,51,0.08) !important;
+	border-bottom-color: rgba(0,17,51,0.26) !important;
+	text-shadow: none !important;
+}
+
+.bt-toggler:hover {
+	box-shadow:0 2px 0 rgba(255,255,255,1) inset,
+	0 0 10px rgba(0,14,41,0.08) inset,
+	0 1px 0 rgba(255,255,255,1);
+}
+
+/* Content
+----------------------------------------------------------------------------------------------------*/
+
+.wk-accordion-default .content { padding: 10px;}

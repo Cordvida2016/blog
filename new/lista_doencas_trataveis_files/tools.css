@@ -1,0 +1,341 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+@import url(../warp/css/tools.css);
+
+
+/* Buttons (Needed for System Markup)
+----------------------------------------------------------------------------------------------------*/
+
+a.button-more {
+	display: block;
+	height: 35px;
+	width: 35px;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	text-indent: 50px;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+a.button-more:hover { background-position: 0 -50px; }
+
+/* Images and Objects (Needed for System Markup)
+----------------------------------------------------------------------------------------------------*/
+
+img.border-box { border: 1px solid #aaa; }
+
+
+/* Lists and Tables (Needed for System Markup)
+----------------------------------------------------------------------------------------------------*/
+
+/* Line */
+ul.line > li { border-top: 1px solid #aaa; }
+ul.line > li:first-child { border: none; }
+
+/* Check */
+ul.check > li,
+/*caffo*/ 
+ul.checkamarelo > li,
+ul.checkazul > li,
+ul.checkbranco > li,
+ul.checklaranja > li,
+ul.checklilas > li,
+ul.checkmarrom > li,
+ul.checkpetroleo > li,
+ul.checkverde > li /*caffo*/ {
+	padding: 4px 0 0 30px;
+	background-position: 0 0;
+	background-repeat: no-repeat !important;
+	list-style:none;
+	margin-left: -30px;
+	font-size:12px;
+}
+
+/* Line-Iconbig */
+#page ul.line-iconbig {
+	margin-top: -20px;
+	padding-left: 0;
+	list-style: none;
+}
+#page .deepest > ul.line-iconbig:last-child { margin-bottom: -20px; }
+
+ul.line-iconbig > li {
+	min-height: 50px;
+	margin-bottom: 20px;
+	padding: 20px 0 0px 50px;
+	background: url(../images/tools/list_line_iconbig.png) 0 0 no-repeat;
+	border-top: 1px solid #aaa;
+}
+
+ul.line-iconbig > li:first-child { border: none; }
+
+ul.line-iconbig > li.food { background-position: 0 -400px; }
+ul.line-iconbig > li.music { background-position: 0 -800px; }
+ul.line-iconbig > li.fashion { background-position: 0 -1200px; }
+
+ul.line-iconbig > li > h3 { margin-top: 0; }
+
+
+/* Zebra List and Table */
+ul.zebra > li,
+table.zebra tbody td { border-bottom: 1px solid #ddd; padding-left:10px;	/*padding inclusao caffo*/ }
+ul.zebra > li:first-child,
+table.zebra tbody tr:first-child td { border-top: 1px solid #ddd; }
+
+ul.zebra > li.odd,
+table.zebra tbody tr.odd { background: #EBEBEB; }
+ul.zebra > li:nth-of-type(odd),
+table.zebra tbody tr:nth-of-type(odd) { background: #EBEBEB; }
+
+table.zebra caption { color: #999; }
+
+
+/* Zebra Caffo List and Table */
+ul.zebracaffo > li,
+table.zebracaffo tbody td { 
+	border: 1px solid #ddd;
+	padding-left:10px;	/*padding inclusao caffo*/
+	padding-bottom:0px;
+	padding-top:0px;
+}
+table.zebracaffo tbody td p{
+	margin:2px;
+}
+
+ul.zebracaffo > li:first-child,
+table.zebracaffo tbody tr:first-child td { border-top: 1px solid #ddd; }
+
+ul.zebracaffo > li.odd,
+table.zebracaffo tbody tr.odd { background: #EBEBEB; }
+ul.zebracaffo > li:nth-of-type(odd),
+table.zebracaffo tbody tr:nth-of-type(odd) { background: #EBEBEB; }
+
+table.zebra caption { color: #999; }
+
+
+
+/* Definition Lists
+----------------------------------------------------------------------------------------------------*/
+
+dl.separator dt {	
+	position: relative;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-transform: uppercase;
+}
+
+/* border code because of RTL */
+dl.separator dd {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-width: 0 0 0 1px;
+	border-style: solid;
+	border-color: #DDD;
+}
+
+dl.separator dt:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: -15px;
+	width: 30px;
+	border-top: 1px solid #DDD;
+}
+
+dl.separator dt:after {
+	content: "";
+	position:absolute;
+	top: -3px;
+	right: -3px;
+	width: 5px;
+	height: 5px;
+	background: #FFF;
+	border: 1px solid #DDD;
+	border-radius:6px;
+}
+
+dl.separator dt:first-child:before,
+dl.separator dt:first-child:after { display: none; }
+
+
+/* Text
+----------------------------------------------------------------------------------------------------*/
+
+/* Inline Text Box */
+em.box { 
+	border: 1px dotted #bbb;
+	background: #fff;
+	color: #444;
+}
+
+/* Dotted Horizontal Rule */
+hr.dotted { background: url(../images/tools/line_dotted.png) 0 0 repeat-x; }
+
+
+/* Boxes
+----------------------------------------------------------------------------------------------------*/
+
+.box-content {
+	background: #fff;
+	border: 1px solid #ddd;
+}
+
+.box-note,
+.box-info,
+.box-warning,
+.box-hint,
+.box-download {
+	background: #fff;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}
+
+.box-info {
+	background: #E8F1F7 url(../images/tools/box_info.png) 0 0 no-repeat;
+	border-color: #d2dce1;
+}
+
+.box-warning {
+	background: #FBEDEC url(../images/tools/box_warning.png) 0 0 no-repeat;
+	border-color: #ffd7cd;
+}
+
+.box-hint {
+	background: #FAF4E4 url(../images/tools/box_hint.png) 0 0 no-repeat;
+	border-color: #fae6be;
+}
+
+.box-download {
+	background: #F0F5DC url(../images/tools/box_download.png) 0 0 no-repeat;
+	border-color: #dce6be;
+}
+
+
+/* Forms (Needed for System Markup)
+----------------------------------------------------------------------------------------------------*/
+
+form.box fieldset { border: 1px solid #ddd; }
+form.box legend { background: #fff; }
+
+
+/* Mobile Switcher (Needed for Mobile)
+----------------------------------------------------------------------------------------------------*/
+
+.mobile-switcher {
+	background: #eee;
+	border: 1px solid #aaa;
+}
+
+/* Social Icons
+----------------------------------------------------------------------------------------------------*/
+
+.social-icons {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	overflow: hidden;
+}
+
+.social-icons li {
+	float: left;
+	margin: 0 6px 0 0;
+	line-height: 25px;
+}
+
+.social-icons li a {
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	float: left;
+	overflow: hidden;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	text-indent: 50px;
+}
+
+.social-icons .rss a { background-position: 0 0; }
+.social-icons .rss a:hover { background-position: 0 -30px; }
+
+.social-icons .twitter a { background-position: 0 -60px; }
+.social-icons .twitter a:hover { background-position: 0 -90px; }
+
+.social-icons .facebook a { background-position: 0 -120px; }
+.social-icons .facebook a:hover { background-position: 0 -150px; }
+
+.social-icons .flickr a { background-position: 0 -180px; }
+.social-icons .flickr a:hover { background-position: 0 -210px; }
+
+.social-icons .linkedin a { background-position: 0 -240px; }
+.social-icons .linkedin a:hover { background-position: 0 -270px; }
+
+.social-icons .myspace a { background-position: 0 -300px; }
+.social-icons .myspace a:hover { background-position: 0 -330px; }
+
+.social-icons .lastfm a { background-position: 0 -360px; }
+.social-icons .lastfm a:hover { background-position: 0 -390px; }
+
+.social-icons .dribbble a { background-position: 0 -420px; }
+.social-icons .dribbble a:hover { background-position: 0 -450px; }
+
+.social-icons .digg a { background-position: 0 -480px; }
+.social-icons .digg a:hover { background-position: 0 -510px; }
+
+.social-icons .delicious a { background-position: 0 -540px; }
+.social-icons .delicious a:hover { background-position: 0 -570px; }
+
+.social-icons .deviantart a { background-position: 0 -600px; }
+.social-icons .deviantart a:hover { background-position: 0 -630px; }
+
+.social-icons .technorati a { background-position: 0 -660px; }
+.social-icons .technorati a:hover { background-position: 0 -690px; }
+
+.social-icons .stumbleupon a { background-position: 0 -720px; }
+.social-icons .stumbleupon a:hover { background-position: 0 -750px; }
+
+.social-icons .yahoo a { background-position: 0 -780px; }
+.social-icons .yahoo a:hover { background-position: 0 -810px; }
+
+.social-icons .openid a { background-position: 0 -840px; }
+.social-icons .openid a:hover { background-position: 0 -870px; }
+
+.social-icons .xing a { background-position: 0 -900px; }
+.social-icons .xing a:hover { background-position: 0 -930px; }
+
+.social-icons .forrst a { background-position: 0 -960px; }
+.social-icons .forrst a:hover { background-position: 0 -990px; }
+
+.social-icons .googleplus a { background-position: 0 -1020px; }
+.social-icons .googleplus a:hover { background-position: 0 -1050px; }
+
+.social-icons .youtube a { background-position: 0 -1080px; }
+.social-icons .youtube a:hover { background-position: 0 -1110px; }
+
+.social-icons .vimeo a { background-position: 0 -1140px; }
+.social-icons .vimeo a:hover { background-position: 0 -1170px; }
+
+.social-icons .foursquare a { background-position: 0 -1200px; }
+.social-icons .foursquare a:hover { background-position: 0 -1230px; }
+
+.social-icons .github a { background-position: 0 -1260px; }
+.social-icons .github a:hover { background-position: 0 -1290px; }
+
+
+/* Symbol Icons
+----------------------------------------------------------------------------------------------------*/
+
+.symbol-icons {
+	display: inline-block;
+	height: 45px;
+	width: 45px;
+	margin-right: 5px;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+}
+
+.symbol-icons.arrow:hover { background-position: 0 -50px; }
+.symbol-icons.heart { background-position: 0 -100px; }
+.symbol-icons.heart:hover { background-position: 0 -150px; }
+.symbol-icons.plus { background-position: 0 -200px; }
+.symbol-icons.plus:hover { background-position: 0 -250px; }
+.symbol-icons.eye { background-position: 0 -300px; }
+.symbol-icons.eye:hover { background-position: 0 -350px; }

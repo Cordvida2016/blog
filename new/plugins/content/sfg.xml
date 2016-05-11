@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="content">
+	<name>Content - Smart Former Gold</name>
+	<author>IToris Inc.</author>
+	<creationDate>January 2009</creationDate>
+	<copyright>(C) 2008 IToris. All rights reserved.</copyright>
+	<license>Commercial</license>
+	<authorUrl>www.itoris.com</authorUrl>
+	<version>1.5</version>
+	<description>Smart Former Gold plugin</description>
+	<files>
+		<filename plugin="sfg">sfg.php</filename>
+	</files>
+	<params />
+	<config>
+		<fields name="params">
+		</fields>
+	</config>
+</install>

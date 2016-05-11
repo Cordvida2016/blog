@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.7" type="plugin" group="system" method="upgrade" >
+	<name>plg_sys_jsbyitemid</name>
+	<author>Eric Schneider</author>
+	<creationDate>September 2012</creationDate>
+	<copyright>Copyright (C) 2012 Eric Schneider. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>eric.s@craziation.com</authorEmail>
+	<authorUrl>www.craziation.com</authorUrl>
+	<version>J1.7-2.5/1.0.0</version>
+	<description>PLG_SYS_JSBYITEMID_DESCRIPTION</description>
+	<files>
+		<filename plugin="jsbyitemid">jsbyitemid.php</filename>
+		<filename>index.html</filename>
+		<folder>js</folder>
+		<folder>language</folder>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">		
+				<field name="items" type="textarea" rows="20" cols="60" default="" label="PLG_SYS_JSBYITEMID_ITEMS_LABEL" description="PLG_SYS_JSBYITEMID_ITEMS_DESC" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

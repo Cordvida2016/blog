@@ -1,0 +1,29 @@
+/*
+# ------------------------------------------------------------------------
+# SlideShow Pro SP2 module for Joomla 2.5.x and 3.x
+# ------------------------------------------------------------------------
+# Copyright (C) 2010 - 2013 JoomShaper.com. All Rights Reserved.
+# @license - PHP files are GNU/GPL V2. CSS / JS are Copyrighted Commercial,
+# Author: JoomShaper.com
+# Websites:  http://www.joomshaper.com
+# Redistribution, Modification or Re-licensing of this file in part of full, 
+# is bound by the License applied. 
+# ------------------------------------------------------------------------
+*/
+.sp-slide-content{overflow:hidden}
+.image-block{position:absolute}
+.preload{background:url(../images/loading.gif) no-repeat center;visibility:visible;background-color:#fff;z-index:120}
+div .sp-slide-desc{overflow:hidden;width:480px;height:180px;bottom:10px;background:url(../images/desc-bg.png)}
+div .controllers{left:0;position:absolute;bottom:0;z-index:1}
+div .controllers h4{color:#333;font-size:11px;margin:5px 0;padding:0}
+.controllers div.handles{cursor:pointer;display:block;float:left;overflow:hidden}
+.controllers .thumb_bg{background:#cacccd;display:block;color:#666}
+.controllers .thumb_bg2{background:url(../images/border2.gif) repeat-y 100% 50%}
+.controllers .active .thumb_bg{background:#fff;display:block;color:#666}
+.controllers .active .thumb_arrow{background:url(../images/active-thumb2.png) no-repeat 50% 100%}
+.controllers div.handles.active h4{color:#666}
+.sp_slide_prev,.sp_slide_next{width:40px;position:absolute;top:auto!important;bottom:0;z-index:1;cursor:pointer}
+.sp_slide_prev{left:0;background:#cacccd url(../images/prev.png) no-repeat center}
+.sp_slide_next{right:0;background:#cacccd url(../images/next.png) no-repeat center}
+img.sp-image{float:left;border:3px solid #ccc;margin-right:5px}
+.sp-slide-inner,.controllers .sp-slide-inside{padding:10px}

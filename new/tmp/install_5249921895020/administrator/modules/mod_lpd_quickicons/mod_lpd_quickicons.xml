@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" client="administrator" method="upgrade" version="1.5.0" position="icon">
+	<name>LPD Quick Icons (admin)</name>
+	<author>JoomlaWorks</author>
+	<creationDate>December 9th, 2011</creationDate>
+	<copyright>Copyright (c) 2006 - 2011 JoomlaWorks Ltd. All rights reserved.</copyright>
+	<authorEmail>contact@joomlaworks.gr</authorEmail>
+	<authorUrl>www.joomlaworks.gr</authorUrl>
+	<version>2.5.4</version>
+	<description>LPD_QUICKICONS_FOR_USE_IN_THE_JOOMLA_CONTROL_PANEL_DASHBOARD_PAGE</description>
+	<files>
+		<filename module="mod_lpd_quickicons">mod_lpd_quickicons.php</filename>
+		<filename>index.html</filename>
+		<folder>tmpl</folder>
+	</files>
+	<params>
+		<param name="moduleclass_sfx" type="text" default="" label="LPD_MODULE_CLASS_SUFFIX" description="LPD_MODULE_CLASS_SUFFIX_DESCRIPTION"/>
+		<param name="modCSSStyling" type="list" default="1" label="LPD_MODULE_DEFAULT_CSS" description="">
+			<option value="1">LPD_ENABLED</option>
+			<option value="0">LPD_DISABLED</option>
+		</param>
+		<param name="modLogo" type="list" default="1" label="LPD_MODULE_LOGO" description="">
+			<option value="1">LPD_SHOW</option>
+			<option value="0">LPD_HIDE</option>
+		</param>
+	</params>
+	<params group="advanced">
+		<param name="cache" type="list" default="0" label="LPD_CACHING" description="LPD_SELECT_WHETHER_TO_CACHE_THE_CONTENT_OF_THIS_MODULE">
+			<option value="0">LPD_NO_CACHING</option>
+			<option value="1">LPD_USE_GLOBAL</option>
+		</param>
+		<param name="cache_time" type="text" default="900" label="LPD_CACHE_TIME" description="LPD_THE_TIME_IN_SECONDS_BEFORE_THE_MODULE_IS_RECACHED"/>
+	</params>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="modCSSStyling" type="list" default="1" label="LPD_MODULE_DEFAULT_CSS" description="">
+					<option value="1">LPD_ENABLED</option>
+					<option value="0">LPD_DISABLED</option>
+				</field>
+				<field name="modLogo" type="list" default="1" label="LPD_MODULE_LOGO" description="">
+					<option value="1">LPD_SHOW</option>
+					<option value="0">LPD_HIDE</option>
+				</field>
+			</fieldset>
+			<fieldset name="advanced">
+				<field name="cache" type="list" default="0" label="LPD_CACHING" description="LPD_SELECT_WHETHER_TO_CACHE_THE_CONTENT_OF_THIS_MODULE">
+					<option value="0">LPD_NO_CACHING</option>
+					<option value="1">LPD_USE_GLOBAL</option>
+				</field>
+				<field name="cache_time" type="text" default="900" label="LPD_CACHE_TIME" description="LPD_THE_TIME_IN_SECONDS_BEFORE_THE_MODULE_IS_RECACHED"/>
+			</fieldset>
+		</fields>
+	</config>
+</install>

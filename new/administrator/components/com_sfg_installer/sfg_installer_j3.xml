@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.0" method="upgrade">
+	<name>SFG_Installer</name>
+	<creationDate>October 2012</creationDate>
+	<author>IToris Inc.</author>
+	<authorEmail>sales@itoris.com</authorEmail>
+	<authorUrl>www.itoris.com</authorUrl>
+	<copyright>IToris Inc.</copyright>
+	<license>Commercial</license>
+	<version>1.9.0</version>
+	<description>
+		Smart Former Gold is the Professional Visual Form Builder for Joomla 1.5.x - Joomla 3.0.x websites
+		&lt;script type=&quot;text/javascript&quot;&gt;document.location='index.php?option=com_sfg_installer';&lt;/script&gt;
+	</description>
+	<administration>
+		<menu>com_sfg_installer</menu>
+		<files folder="admin">
+			<filename>admin.sfg_installer.php</filename>
+			<filename>back.gif</filename>
+			<filename>fail.png</filename>
+			<filename>index.html</filename>
+			<filename>process.gif</filename>
+			<filename>sfg_installer_j3.xml</filename>
+			<filename>sfg_installer.php</filename>
+			<filename>success.png</filename>
+			<filename>toolbar.sfg_installer.php</filename>
+			<filename>tmp/index.html</filename>
+		</files>
+		<languages folder="admin">
+			<language tag="en-GB">language/en-GB.com_sfg_installer.sys.ini</language>
+		</languages>
+	</administration>
+</extension>

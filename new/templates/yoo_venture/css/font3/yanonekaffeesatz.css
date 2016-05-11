@@ -1,0 +1,16 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+.menu-dropdown a.level1,
+.menu-dropdown span.level1 {
+	font-family: "YanoneKaffeesatzLight";
+	font-size: 18px;
+}
+
+.menu-dropdown .level1 .level1 span.title {
+	font-size: 16px;
+	line-height: 21px;
+}
+.menu-dropdown .level1 .level1 span.subtitle {
+	margin-top: -2px;
+	font-size: 12px;
+}

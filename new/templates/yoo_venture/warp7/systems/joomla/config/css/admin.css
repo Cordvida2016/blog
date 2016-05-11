@@ -1,0 +1,26 @@
+/* Copyright (C) YOOtheme GmbH, http://www.gnu.org/licenses/gpl.html GNU/GPL */
+
+/*
+ * Component:        Joomla 3
+ * Description:      Defines Joomla 3 specific styles for the Warp admininistration
+ ========================================================================== */
+
+/* Layouts
+ ========================================================================== */
+
+ /*
+  * Assign select
+  */
+
+.tm-assign-select .uk-h3 {
+	margin-top: 15px !important;
+}
+
+.tm-assign-select .uk-h3:first-child { margin-top: 0 !important; }
+
+.tm-assign-select > .uk-list {
+    margin-top: 5px !important;
+    margin-bottom: 15px !important;
+}
+
+.tm-assign-select > .uk-list li { line-height: 22px; }

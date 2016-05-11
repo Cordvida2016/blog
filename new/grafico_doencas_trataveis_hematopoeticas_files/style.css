@@ -1,0 +1,116 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+/*
+ * Style Style Sheet - Defines the main look like colors and backgrounds
+ * Not all style related CSS is included, only colors and backgrounds which may change for different theme styles
+ */
+
+
+/* Base
+----------------------------------------------------------------------------------------------------*/
+
+a { color: #666; 	/*caffo B0392E*/}
+
+/*caffo
+::-moz-selection { background: #E6894E; color: #E6894E; }
+::selection { background: #E6894E; color: #E6894E; }*/
+
+
+/* Layout
+----------------------------------------------------------------------------------------------------*/
+
+#totop-scroller { background-image: url(../images/totop_scroller.png); }
+
+
+/* Menus
+----------------------------------------------------------------------------------------------------*/
+
+.menu-dropdown li.level1:hover .level1,
+.menu-dropdown li.remain .level1,
+.menu-dropdown a.level2:hover,
+.menu-dropdown a.level3:hover { color: #FFF; /*caffo #999*/} 
+
+.menu-sidebar .level2 a:hover > span,
+.menu-line li a:hover { color: #CCC; /*caffo #999;*/ 
+}
+
+.menu-sidebar li.level1 > a:hover,
+.menu-sidebar li.level1 > span:hover { 
+/*background: #E6894E;	caffo #A53B3F*/ }
+
+
+/* Modules
+----------------------------------------------------------------------------------------------------*/
+
+.mod-black a:hover,
+.mod-transparent { color: #B0392E; }
+
+.mod-color { background: #B0392E; }
+
+.mod-color .badge { background-image: url(../images/module_badges_black.png); }
+
+.mod-color ul.zebra > li.odd,
+.mod-color table.zebra tbody tr.odd { background: #A4352B; }
+.mod-color ul.zebra > li:nth-of-type(odd),
+.mod-color table.zebra tbody tr:nth-of-type(odd) { background: #A4352B; }
+.mod-color em.box {	background: #A4352B; }
+
+/* Tools
+----------------------------------------------------------------------------------------------------*/
+
+a.button-more { 
+	background-image: url(../images/button_more.png);
+	float:right;	/*caffo*/
+	padding-top:0px;	/*caffo*/
+}
+ul.check > li { background-image: url(../images/tools/list_check.png); }
+/*caffo inicio*/
+ul.checkamarelo > li { background-image: url(../images/tools/list_check_amarelo.png); }
+ul.checkazul > li { background-image: url(../images/tools/list_check_azul.png); }
+ul.checkbranco > li { background-image: url(../images/tools/list_check_branco.png); }
+ul.checklaranja > li { background-image: url(../images/tools/list_check_laranja.png); }
+ul.checklilas > li { background-image: url(../images/tools/list_check_lilas.png); }
+ul.checkmarrom > li { background-image: url(../images/tools/list_check_marrom.png); }
+ul.checkpetroleo > li { background-image: url(../images/tools/list_check_petroleo.png); }
+ul.checkverde > li { background-image: url(../images/tools/list_check_verde.png); }
+/*caffo fim*/
+
+.social-icons li a { background-image: url(../images/tools/icons_social.png); }
+
+.symbol-icons { background-image: url(../images/tools/icons_symbols.png); }
+
+/* System
+----------------------------------------------------------------------------------------------------*/
+
+#system .items .links > a { background-image: url(../images/button_more.png); }
+
+#system .pagination a,
+#system .pagination strong,
+#system .pagination a.previous,
+#system .pagination a.next { background-image: url(../images/pagination.png); }
+
+#system .pagination a:hover,
+#system .pagination strong { color: #B0392E; }
+
+#searchbox .results li.results-header { background: #B0392E; }
+
+#searchbox .results li.result.selected { color: #B0392E; }
+
+#system #comments .comment-byadmin .comment-head { background: #EBD3D1; }
+
+
+/* Extensions
+----------------------------------------------------------------------------------------------------*/
+
+.wk-gallery-showcase .slides-container:hover .next,
+.wk-gallery-showcase .slides-container:hover .prev { background-image: url(../images/widgetkit/gallery/buttons.png); }
+
+.wk-gallery-showcase .wk-slideset .set > li:hover:after { background: url(../images/widgetkit/gallery/hover.png); }
+.wk-gallery-showcase .wk-slideset .set > li.active:after { border: 5px solid #B0392E; }
+
+.wk-gallery-showcase .wk-slideset > div .next,
+.wk-gallery-showcase .wk-slideset > div .prev {	background-image: url(../images/widgetkit/gallery/navigation_buttons.png); }
+
+.spotlight .overlay { background: url(../images/widgetkit/spotlight/hover.png); }
+
+.spotlight .overlay-default	{ background-color: rgba(176,57,46,0.5); }

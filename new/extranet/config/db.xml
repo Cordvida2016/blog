@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<dataBase>
+   <SERVER>mysql03.bighost.com.br</SERVER>
+   <DBNAME>cordvid_extranet</DBNAME>  
+   <USER>pklien</USER>
+   <PASS>cocord</PASS>
+</dataBase>

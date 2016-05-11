@@ -1,0 +1,6 @@
+#RewriteEngine On
+<Files ~ "\.xml$">
+Order allow,deny
+Allow from all
+#Satisfy all
+</Files>

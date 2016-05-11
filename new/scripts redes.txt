@@ -1,0 +1,25 @@
+MODULO CURTA
+
+<div class="fb-like" data-href="https://www.facebook.com/cordvida.celulastronco" data-width="120" data-height="The pixel height of the plugin" data-colorscheme="light" data-layout="box_count" data-action="like" data-show-faces="true" data-send="true"></div>
+
+
+<h3 class="module-title"><br />Siga a CordVida</h3>
+
+<ul class="social-icons">
+<li class="twitter"><a href="https://twitter.com/cordvida" title="Twitter" target="_blank">&nbsp;</a></li>
+<li class="facebook"><a href="https://www.facebook.com/cordvida.celulastronco" title="Facebook">&nbsp;</a></li>
+<li class="youtube"><a href="http://www.youtube.com/user/CordVida/videos" title="YouTube"></a>&nbsp;</li>
+</ul> 
+
+
+
+
+SCRIPT:
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/pt_BR/all.js#xfbml=1&appId=184973654919746";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>

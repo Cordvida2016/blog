@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5.0">
+	<name>SFG</name>
+	<creationDate>July 2013</creationDate>
+	<author>IToris Inc.</author>
+	<authorEmail>sales@itoris.com</authorEmail>
+	<authorUrl>www.itoris.com</authorUrl>
+	<copyright>IToris Inc.</copyright>
+	<license>Commercial</license>
+	<version>1.5.3</version>
+	<description>Smart Former Gold is the Professional Visual Form Builder for Joomla 1.5.x - 3.0.x websites</description>
+	<uninstallfile>uninstall.sfg.php</uninstallfile>
+</install>

@@ -1,0 +1,94 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+@import url(../warp/css/layout.css);
+
+
+/* Spacing
+----------------------------------------------------------------------------------------------------*/
+
+.module,
+#content,
+#footer { margin: 5px; }
+
+#header { 
+	margin: 0 5px 3px 5px;/* caffo 0 5px 5px 5px */
+	padding: 10px; 
+}
+
+#logo { 
+	margin-right: 20px;
+}
+
+#toolbartop {background-color:#DED0B6; margin-bottom: 7px;}/*--- caffo inclusao --*/
+
+#toolbar,
+#headerbar { margin-bottom: 45px; }
+
+#toolbar + #headerbar { margin-top: -35px;}
+
+#headerbar .module {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.breadcrumbs { margin-bottom: 10px; /* caffo 20px;*/ }
+
+#footer {
+	margin-bottom: 10px;
+	padding: 10px;
+}
+
+#footer .module { margin: 0; }
+
+
+/* Layout
+----------------------------------------------------------------------------------------------------*/
+
+#header,
+#footer { color: #fff; /*caffo ccc*/ }
+
+#header { background: #1A1A1C; }
+
+#menubar { 
+	position: absolute;
+	right: 7px;
+	bottom: 7px;
+}
+
+#menu { float: right; }
+
+#top-a + #main:before,
+#top-b + #main:before,
+#main + #bottom-a:before,
+#main + #bottom-b:before {
+	display: block;
+	content: "";
+	height: 20px;
+	margin: 0 5px;
+	background: url(../images/layout_separator.png) repeat-x;
+}
+
+#content {
+	padding: 10px 20px 10px 20px; /* caffo 20px;*/
+	background: #FAFAFA;
+}
+
+#footer { 
+	text-align: left;
+	background: url(../images/module_transparent.png); 
+}
+
+#totop-scroller {
+	display: block;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	z-index: 1;
+	width: 35px;
+	height: 35px;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	text-decoration: none;
+}
+
+#totop-scroller:hover { background-position: 0 -50px; }

@@ -1,0 +1,11 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+body, select, input, textarea, button {
+	font-family: "nunitolight", Arial, Helvetica, sans-serif;
+	font-size: 13px;
+}
+
+#footer,
+#footer .menu-line li,
+table.zebra tbody,
+table.zebra tfoot { font-size: 13px; }

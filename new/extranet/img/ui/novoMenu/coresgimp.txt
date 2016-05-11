@@ -1,0 +1,3 @@
+Vermelho forte: 7a1910
+Vermelho mais fraco: 7f2a18
+Cor fundo: d6e6a0

@@ -1,0 +1,10 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+body, select, input, textarea, button { font-family: "oswaldlight", Arial, Helvetica, sans-serif; }
+
+body {
+	font-size: 16px;
+	line-height: 20px;
+}
+
+small { font-size: 14px; }

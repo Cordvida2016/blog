@@ -1,0 +1,66 @@
+/*
+ * Name:			Breadcrumb
+ * Description:		Defines styles for a breadcrumb navigation
+ *
+ * Component:		`uk-breadcrumb`
+ *
+ * States:		 	`uk-active`
+ *
+ ========================================================================== */
+
+
+/* Component
+ ========================================================================== */
+
+/*
+ * 1. Remove default list style
+ * 2. Hack to remove whitespace that results from using `inline-block` for items
+ */
+
+.uk-breadcrumb {
+	/* 1 */
+	padding: 0;
+	list-style: none;
+	/* 2 */
+	font-size: 0;
+	.hook-breadcrumb;
+}
+
+
+/* Items
+ ========================================================================== */
+
+/*
+ * 1. Needed to reset whitespace hack
+ * 2. Needed because of 1. to correct the line-height
+ */
+
+.uk-breadcrumb > li {
+	font-size: @breadcrumb-font-size; /* 1 */
+	vertical-align: top; /* 2 */
+} 
+
+.uk-breadcrumb > li,
+.uk-breadcrumb > li > a,
+.uk-breadcrumb > li > span { display: inline-block; }
+
+.uk-breadcrumb > li:nth-child(n+2):before {
+	content: @breadcrumb-divider;
+	display: inline-block;
+	margin: 0 @breadcrumb-divider-margin;
+	vertical-align: top; /* 2 */
+	.hook-breadcrumb-divider;
+}
+
+/*
+ * Disabled
+ */
+
+.uk-breadcrumb > li:not(.uk-active) > span { color: @breadcrumb-disabled-color; }
+
+
+/* Hooks
+ ========================================================================== */
+
+.hook-breadcrumb() {}
+.hook-breadcrumb-divider() {}

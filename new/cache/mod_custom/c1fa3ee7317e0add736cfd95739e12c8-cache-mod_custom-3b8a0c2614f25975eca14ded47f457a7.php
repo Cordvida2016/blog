@@ -1,0 +1,6 @@
+<?php die("Access Denied"); ?>#x#a:2:{s:6:"output";a:2:{s:4:"body";s:0:"";s:4:"head";a:0:{}}s:6:"result";s:936:"
+<div class="frontpage"><a href="index.php?option=com_content&amp;view=category&amp;layout=blog&amp;id=18&amp;Itemid=228"><img class="float-left" style="margin-right: 15px; margin-bottom: 5px; float: left;" src="images/cordvida/icones/videos_flat_100x100.png" alt="videos flat 100x100" width="52" height="52" /></a>
+<div style="margin: 0 0 4px 0; padding-top: 5px;"><strong>Vídeos CordVida<br /><br /></strong></div>
+</div>
+<hr size="1" />
+<div><a href="index.php?option=com_content&amp;view=article&amp;id=79&amp;Itemid=334"><img style="margin: 0px 6px 6px 0px;" src="images/cordvida/accredited.png" alt="accredited" width="100" height="31" /></a><br /><span style="color: #696969; font-family: 'Trebuchet MS', Verdana, Arial, sans-serif; font-size: 9px; line-height: 11px;">Todos os processos da CordVida estão de acordo com os melhores padrões mundiais certificados pela AABB (American Association of Blood Banks)</span></div>";}

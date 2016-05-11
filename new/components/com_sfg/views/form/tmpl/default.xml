@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="SFG Menu">
+		<message>
+			<![CDATA[Allows to bind a SFG form to a menu]]>
+		</message>
+	</layout>
+	<fields name="params">
+		<fieldset name="params" label="SFG Menu options" >
+			<field name="formid" type="text" description="SFG Form ID to bind to menu" label="SFG Form ID" size="30" />
+		</fieldset>
+	</fields>
+</metadata>

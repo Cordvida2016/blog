@@ -1,0 +1,40 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+@import url(../warp/css/system.css);
+@import url(../warp/systems/joomla/css/system.css);
+@import url(system-all.css);
+@import url(http://fonts.googleapis.com/css?family=Architects+Daughter);
+/*font-family: 'Architects Daughter', cursive;*/
+@import url(http://fonts.googleapis.com/css?family=Loved+by+the+King);
+@import url(http://fonts.googleapis.com/css?family=Gloria+Hallelujah);
+/*font-family: 'Gloria Hallelujah', cursive;*/
+@import url(http://fonts.googleapis.com/css?family=Just+Me+Again+Down+Here);
+/*font-family: 'Just Me Again Down Here', cursive;*/
+
+
+/* Items (Addition)
+----------------------------------------------------------------------------------------------------*/
+ 
+#system .items .leading .item {
+	padding-bottom: 12px;
+	margin-bottom: 18px;
+	border-bottom: 1px solid #ddd;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+	box-shadow: 0 1px 0 rgba(255,255,255,1)
+}
+
+
+/* Item List
+----------------------------------------------------------------------------------------------------*/
+
+#system .item-list {
+	border-bottom: 1px solid #ddd;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+	box-shadow: 0 1px 0 rgba(255,255,255,1)
+}
+
+
+/* Search
+----------------------------------------------------------------------------------------------------*/
+
+#system span.highlight { background-color: #ffffaa; }

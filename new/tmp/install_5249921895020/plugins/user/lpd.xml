@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="user" method="upgrade">
+  <name>User - LPD</name>
+  <author>JoomlaWorks</author>
+  <creationDate>December 9th, 2011</creationDate>
+  <copyright>Copyright (c) 2006 - 2011 JoomlaWorks Ltd. All rights reserved.</copyright>
+  <authorEmail>contact@joomlaworks.gr</authorEmail>
+  <authorUrl>www.joomlaworks.gr</authorUrl>
+  <version>2.5.4</version>
+  <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+  <description>LPD_A_USER_SYNCHRONIZATION_PLUGIN_FOR_LPD</description>
+  <files>
+    <filename plugin="lpd">lpd.php</filename>
+  </files>
+  <params>
+</params>
+</install>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+	<name>SmartFormer Gold</name>
+	<author>IToris Inc.</author>
+	<creationDate>January 2009</creationDate>
+	<copyright>(C) 2008 IToris Inc.</copyright>
+	<license>Commercial</license>
+	<authorEmail>sales@itoris.com</authorEmail>
+	<authorUrl>www.itoris.com</authorUrl>
+	<version>1.5.0</version>
+	<description>SmartFormer Gold form module</description>
+	<files>
+		<filename module="mod_sfg">mod_sfg.php</filename>
+	</files>
+	<params>
+		<param name="formid" type="text" default="" label="Form ID" description="Form ID" />
+	</params>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="formid" type="text" default="" label="Form ID" description="Form ID" />
+			</fieldset>
+		</fields>
+	</config>
+</install>

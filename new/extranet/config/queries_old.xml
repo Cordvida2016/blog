@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<queriesList>
+   <LOGIN>SELECT clientID, extranetUsername, extranetPassword FROM client WHERE extranetUsername = ? AND extranetPassword = ? AND isdeleted != 1</LOGIN>
+   <UPDATE_ISDELETED>UPDATE ? SET isdeleted = 1 WHERE ? = ?</UPDATE_ISDELETED>
+     
+   <SELECT_INTERLEAVEDID>SELECT interleavedID FROM proximachave</SELECT_INTERLEAVEDID>
+   <UPDATE_INTERLEAVEDID>UPDATE proximachave SET interleavedID = (interleavedID + 1)</UPDATE_INTERLEAVEDID>
+   
+   <SELECT_BIOARCHIVEID>SELECT bioArchiveID FROM proximachave</SELECT_BIOARCHIVEID>
+   <UPDATE_BIOARCHIVEID>UPDATE proximachave SET bioArchiveID = (bioArchiveID + 1)</UPDATE_BIOARCHIVEID>   
+   
+   <INSERT_CLIENTS_DATA>INSERT INTO client (name, sex, nameFather, emailFather, docFather, cpfFather, nameMother, emailMother,docMother, cpfMother, address, phone1, phone2, phone3, city, state, zip, birthMother, clientID, extranetUsername, extranetPassword,enfermeira,coletaFeitaPor,obstetra,hospital,dataColeta,dataCrioPreservacao,procPesoInicialUnidade,procViabilidadeCelular,procCd45Cd34Fim,bioArchiveID,cult_micro_bacteria,cult_micro_fungo, enfermeiraCoren, obstetraCRM) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)</INSERT_CLIENTS_DATA>
+   <SELECT_CLIENT_DATA>SELECT * FROM client WHERE clientID = ?</SELECT_CLIENT_DATA>
+   <SELECT_ALL_CLIENT_DATA>SELECT * FROM client WHERE isDeleted != 1</SELECT_ALL_CLIENT_DATA>
+   <UPDATE_CLIENT_DATA>UPDATE client SET name = ? , sex = ? , nameFather = ? , emailFather = ? , docFather = ? , cpfFather = ?, nameMother = ? , emailMother = ? ,docMother = ? , cpfMother = ? , address = ? , phone1 = ? , phone2 = ? , phone3 = ? , city = ? , state = ? , zip = ? , birthMother = ?, extranetUsername = ?, extranetPassword = ?, enfermeira = ?,coletaFeitaPor = ?,obstetra = ?,hospital = ?,dataColeta = ?,dataCrioPreservacao = ?,procPesoInicialUnidade = ?,procViabilidadeCelular = ?,procCd45Cd34Fim = ?,bioArchiveID = ?,cult_micro_bacteria = ?,cult_micro_fungo = ?, enfermeiraCoren = ?, obstetraCRM = ? WHERE clientID = ?</UPDATE_CLIENT_DATA>
+ 
+   <SELECT_OBSTETRA_DATA>SELECT * FROM obstetra WHERE obstetraID = ?</SELECT_OBSTETRA_DATA>   
+   <INSERT_OBSTETRA_DATA>INSERT INTO obstetra (name,email,crm,state,city,phone1,phone2,address,cep,cpf,contaCorrente,razaoSocial,agencia,banco,secondAddress,secondState,secondCity,secondCep,type,phone3,secretary, parceiro, temDisplay, extranetUsername, extranetPassword,obstetraID) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)</INSERT_OBSTETRA_DATA>
+   <UPDATE_OBSTETRA_DATA>UPDATE obstetra SET name = ?, email = ?, crm = ?, state = ?, city = ?, phone1 = ?, phone2 = ?, address = ?, cep = ?, cpf = ?,contaCorrente = ?,razaoSocial = ?, agencia = ?,banco = ?,secondAddress = ?,secondState = ?,secondCity = ?,secondCep = ?, type = ?, phone3 = ?, secretary = ?, parceiro = ?, temDisplay = ?, extranetUsername = ?, extranetPassword = ?  WHERE obstetraID = ?</UPDATE_OBSTETRA_DATA>
+   
+   <SELECT_CLIENT_QUESTIONARIO>SELECT qHepatite,qCHepatite,qVHepatite,qMalaria,qAnemia,qHormonio,qTransSangue,qCancer,qACancer,qPiercing,qExposicaoFluidos,qMedicacao,qMedicacaoQ,qCirurgia,qCompSangue,qVacina,qDoencaCoPuRiDi,qTuberculose,qSIDA,qDrogas,qVenerea,qContatoDrogaSida,qBebida,qDoencaGen,qRecDoacaoSangue,qRecDoacaoSangueMot,qOBS,name,nameMother,birthMother FROM client WHERE clientID = ?</SELECT_CLIENT_QUESTIONARIO>
+   <UPDATE_CLIENT_QUESTIONARIO>UPDATE client SET qHepatite = ?, qCHepatite = ?, qVHepatite = ?,qMalaria = ?,qAnemia = ?,qHormonio = ?,qTransSangue = ?,qCancer = ?,qACancer = ?,qPiercing = ?,qExposicaoFluidos = ?,qMedicacao = ?,qMedicacaoQ = ?,qCirurgia = ?,qCompSangue = ?,qVacina = ?,qDoencaCoPuRiDi = ?,qTuberculose = ?,qSIDA = ?,qDrogas = ?,qVenerea = ?,qContatoDrogaSida = ?,qBebida = ?,qDoencaGen = ?,qRecDoacaoSangue = ?,qRecDoacaoSangueMot = ?, qOBS = ? WHERE clientID = ?</UPDATE_CLIENT_QUESTIONARIO>
+   
+   <SELECT_CLIENT_COLETA>SELECT e.NAME as enfermeira, o.NAME as obstetra, h.NAME as hospital, c.coletaFeitaPor, c.dataColeta, c.NAME, e.coren as enfermeiraCoren, o.CRM as obstetraCRM FROM client AS c, enfermeira AS e, obstetra AS o, hospital AS h  WHERE c.clientID = ? AND e.enfermeiraID = c.enfermeiraID AND o.obstetraID = c.obstetraID AND h.hospitalID = c.hospitalID</SELECT_CLIENT_COLETA>
+   <UPDATE_CLIENT_COLETA>UPDATE client SET enfermeira = ?, obstetra = ?, hospital = ?, coletaFeitaPor = ?, dataColeta = ? WHERE clientID = ?</UPDATE_CLIENT_COLETA>
+   <SELECT_CLIENT_SCUP>SELECT dataCrioPreservacao,procPesoInicialUnidade,procViabilidadeCelular,procCd45Cd34Fim,bioArchiveID,cult_micro_bacteria,cult_micro_fungo,name,enfermeiraCoren,obstetraCRM FROM client WHERE clientID = ?</SELECT_CLIENT_SCUP>
+</queriesList>

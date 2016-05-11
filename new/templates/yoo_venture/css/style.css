@@ -1,0 +1,277 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+/*
+ * Style Style Sheet - Defines the main look like colors and backgrounds
+ * Not all style related CSS is included, only colors and backgrounds which may change for different theme styles
+ */
+
+
+/* Base
+----------------------------------------------------------------------------------------------------*/
+
+body { color: #444; }
+
+h1 { color: #222; }
+h3 { color: #444; }
+h5 { color: #666; }
+h6 { color: #888; }
+
+small { color: #888; }
+
+strong { color: #222; }
+
+.quote * {
+	color: #222;
+	text-shadow: 0 1px 0 rgba(255,255,255,1);
+}
+
+/* Layout
+----------------------------------------------------------------------------------------------------*/
+
+/* Widescreen Backgrounds */
+#block-page {
+	background: #FAFAF8;	/*caffo #efefef*/
+	background: -moz-linear-gradient(top, #fafafa 0%, #efefef 60%);
+	background: -webkit-linear-gradient(top, #fafafa 0%, #efefef 60%);
+	background: -o-linear-gradient(top, #fafafa 0%, #efefef 60%);
+	background: linear-gradient(to bottom, #fafafa 0%, #efefef 60%);
+}
+
+#block-bottom {
+	background: #FAFAF8;	/*caffo	e8e8e8*/
+	background: rgba(0,0,0,0.03);
+}
+
+/* Buttons */
+/*.menu-dropdown a.level1,
+.menu-dropdown span.level1,*/
+.mod-header .module-title,
+.button-default,
+form.style button,
+form.style input[type="button"],
+form.style input[type="submit"],
+#system .pagination a {
+	position: relative;
+	border: 1px solid #d4d4d4;
+	border-bottom-color: #cacaca;
+	border: 1px solid rgba(0,0,0,0.15);
+	border-top-color: rgba(0,0,0,0.08);
+	border-bottom-color: rgba(0,0,0,0.25);
+	/*background: #eaeaea;
+	background: -moz-linear-gradient(top, #f6f6f6 0%, #eaeaea 100%);
+	background: -webkit-linear-gradient(top, #f6f6f6 0%, #eaeaea 100%);
+	background: -o-linear-gradient(top, #f6f6f6 0%, #eaeaea 100%);
+	background: linear-gradient(to bottom, #f6f6f6 0%, #eaeaea 100%);*/
+	box-shadow: 0 2px 0 rgba(255,255,255,0.85) inset,
+				0 0 10px rgba(0,0,0,0.08) inset,
+				0 1px 1px rgba(0,0,0,0.05),
+				0 7px 4px -4px rgba(0,0,0,0.08);
+}
+
+/* Button Hover */
+.menu-dropdown a.level1:hover,
+.menu-dropdown span.level1:hover,
+.button-default:hover,
+form.style button:hover,
+form.style input[type="button"]:hover,
+form.style input[type="submit"]:hover,
+#system .pagination a:hover {
+	border: 1px solid rgba(0,0,0,0.1);
+	border-bottom-color: rgba(0,0,0,0.15);
+	background: #f3f3f3;	/*caffo #f3f3f3*/
+	box-shadow: 0 2px 0 rgba(255,255,255,0.5) inset,
+				0 0 10px rgba(0,0,0,0.05) inset,
+				0 1px 0 rgba(255,255,255,1);
+}
+
+/* Button Active */
+.menu-dropdown a.level1:active,
+.menu-dropdown span.level1:active,
+.button-default:active,
+form.style button:active,
+form.style input[type="button"]:active,
+form.style input[type="submit"]:active,
+#system .pagination a:active {
+	border: 1px solid rgba(0,0,0,0.15);
+	border-top-color: rgba(0,0,0,0.25);
+	background: #fdfdfd;
+	box-shadow: 0 1px 1px rgba(0,0,0,0.1) inset,
+				0 0 5px rgba(0,0,0,0.1) inset,
+				0 1px 0 rgba(255,255,255,1);
+	color: #444;
+}
+
+/* Button Default Line Effect */
+.menu-dropdown a.level1:before,
+.menu-dropdown span.level1:before,
+.mod-header .module-title:before,
+.button-default:before,
+form.style button:before,
+form.style input[type="button"]:before,
+form.style input[type="submit"]:before { 
+	bottom: 1px;
+	opacity: 0.6;
+}
+
+.menu-dropdown a.level1:hover:before,
+.menu-dropdown span.level1:hover,
+.button-default:hover:before,
+form.style button:hover:before,
+form.style input[type="button"]:hover:before,
+form.style input[type="submit"]:hover:before { opacity: 1; }
+
+.menu-dropdown a.level1:active:before,
+.menu-dropdown a.level1:active:before,
+.button-default:active:before,
+.button-primary:active:before,
+form.style button:active:before,
+form.style input[type="button"]:active:before,
+form.style input[type="submit"]:active:before { display: none; }
+
+
+/* Menus
+----------------------------------------------------------------------------------------------------*/
+
+/* Menu-Dropdown */
+.menu-dropdown span.subtitle { color: #888; }
+
+.menu-dropdown .dropdown-bg > div,
+.searchbox .results { 
+	border: 1px solid #ddd;
+	border: 1px solid rgba(0,0,0,0.1);
+	border-bottom-color: rgba(0,0,0,0.15);
+	background: #f7f7f7;
+	background-clip: padding-box;
+	box-shadow: 0 0 5px rgba(255,255,255,1) inset,
+				0 5px 8px rgba(0,0,0,0.1);
+}
+
+.menu-dropdown .dropdown-bg:before { background: url(../images/menu_dropdown_dropdown.png) 50% 0 no-repeat; }
+
+.menu-dropdown .stack .dropdown-bg:before { background-position: 30px 0; }
+
+.menu-dropdown .flip .dropdown-bg:before { background-position: 85% 0; }
+
+.menu-dropdown a.level2 { color: #666; }
+
+.menu-dropdown a.current.level2,
+.menu-dropdown a.current.level3 { color: #222; }
+
+/* Menu-Sidebar */
+.menu-sidebar li.level1 > a,
+.menu-sidebar li.level1 > span { color: #666; }
+
+.menu-sidebar li.level1.active > a,
+.menu-sidebar li.level1.active > span { color: #222; }
+
+/* Menu-Line */
+#toolbar .menu-line li a { color: #888; }
+
+
+/* Modules
+----------------------------------------------------------------------------------------------------*/
+
+.mod-box,
+.mod-inset,
+.mod-frame > div,
+.mod-line,
+.mod-header { color: #666; }
+
+/* Module Dotted */
+.mod-dotted { color: #888; }
+
+/* Module Box */
+.mod-box,
+.system-1 #content {
+	background: #f5f5f5;
+	background: -moz-linear-gradient(top, #fff 0%, #f5f5f5 100%);
+	background: -webkit-linear-gradient(top, #fff 0%, #f5f5f5 100%);
+	background: -o-linear-gradient(top, #fff 0%, #f5f5f5 100%);
+	background: linear-gradient(to bottom, #fff 0%, #f5f5f5 100%);
+	background-clip: padding-box;
+}
+
+/* Module Inset */
+.mod-inset {
+	background: #fff;
+	background-clip: padding-box;
+	box-shadow: 0 1px 1px rgba(0,0,0,0.08) inset,
+				0 0 30px rgba(0,0,0,0.1) inset,
+				0 1px 0 rgba(255,255,255,0.4);
+}
+
+/* Module Frame */
+.mod-frame > div {
+	background: #fafafa;
+	box-shadow: 0 0 30px rgba(0,0,0,0.1) inset;
+}
+
+/* Module Title */
+.module-title { color: #222; }
+.module-title .subtitle { color: #888; }
+
+
+/* Tools
+----------------------------------------------------------------------------------------------------*/
+
+/* Buttons */
+.button-default,
+.mod-black .button-default { color: #666; }
+
+.button-default:active,
+.mod-black .button-default:active { color: #222; }
+
+/* Zebra */
+table.zebra caption { color: #888; }
+
+/* Form Elements */
+form.style input:not([type='button']):focus,
+form.style textarea:focus { color: #444; }
+
+.mod-black form.style input:focus,
+.mod-black form.style textarea:focus {
+	border-color: #222;
+	box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+
+form.short input:-moz-placeholder { color: #888; }
+form.short input::-webkit-input-placeholder { color: #888; }
+
+
+/* System
+----------------------------------------------------------------------------------------------------*/
+
+/* General */
+#system .title a { color: #444; }
+#system small { color: #888; }
+
+/* Item */
+#system .item > header .meta,
+#system .item > header .subtitle { color: #888; }
+
+/* Searchbox */
+.searchbox {
+	border: 1px solid #ddd;
+	border-top-color: #ccc;
+	border: 1px solid rgba(0,0,0,0.1);
+	border-top-color: rgba(0,0,0,0.2);
+	background-color: #fafafa;
+	box-shadow: 0 1px 4px rgba(0,0,0,0.1) inset;
+}
+
+.searchbox input { color: #444; }
+
+.searchbox input:-moz-placeholder { color: #888; }
+.searchbox input:-ms-input-placeholder { color: #888; }
+.searchbox input::-webkit-input-placeholder { color: #888; }
+.searchbox input.placeholder { color: #888; }
+
+
+/* Widgetkit
+----------------------------------------------------------------------------------------------------*/
+
+/* Venture Slideshow Tabs */
+.wk-slideshow-tabs-venture .nav li { color: #888; }
+.wk-slideshow-tabs-venture .nav li:hover { color: #666; }
+.wk-slideshow-tabs-venture .nav li.active { color: #222; }
+.wk-slideshow-tabs-venture .slides > li > article { color: #666; }

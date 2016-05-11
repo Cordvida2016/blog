@@ -1,0 +1,27 @@
+.sfg-form select, .sfg-form option, .sfg-form input, .sfg-form textarea,
+.sfg-form>div, .sfg-form>span,
+.sfg-form input[type=checkbox], .sfg-form input[type=radio], .sfg-form input[type=text],
+.sfg-form input[type=password], .sfg-form input[type=button], .sfg-form input[type=submit], .sfg-form input[type=reset] {
+	padding:0;
+	margin:0;
+	font-family:Arial;
+	font-size:11px;
+	line-height:13px;
+}
+
+.sfg-form select {
+	height:18px;
+	width:auto;
+}
+
+.sfg-form input[type=text], .sfg-form input[type=password] {
+	height:14px;
+	padding:2px;
+	width:auto;
+}
+
+.sfg-form input[type=button], .sfg-form input[type=submit], .sfg-form input[type=reset] {
+	height:auto;
+	width:auto;
+	padding:0;
+}

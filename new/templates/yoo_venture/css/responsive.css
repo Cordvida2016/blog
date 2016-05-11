@@ -1,0 +1,161 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+@import url(../warp/css/responsive.css);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed);
+@import url(http://fonts.googleapis.com/css?family=Just+Me+Again+Down+Here);
+
+/* Breakpoints
+----------------------------------------------------------------------------------------------------*/
+
+/* All except large Screens */
+@media (max-width: 1220px) {
+
+}
+
+@media (max-width: 360px) {
+.tit_0800 {
+  width: 75%;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.21);
+  padding: 10px 15px;
+  background-position: 67px 15px !important;
+}
+
+.tel-contato-top {
+  display: block;
+  text-align: left;
+  font-size: 22px !important;
+  margin-left: 77px !important;
+  border-right: none !important;
+}
+
+.grande-sp-tel {
+  display: block !important;
+  text-align: left !important;
+  margin-left: 18px !important;
+}
+}
+
+@media (max-width: 959px) {
+.0800 { 
+  max-width:120px ; /*larg da img - Caffo*/
+}
+#toolbar .float-left .module { display: none; }
+/*.tit_0800 a {
+  font-size: 12px !important;
+}*/
+}
+
+/* Only Tablets (Portrait) */
+@media (min-width: 768px) and (max-width: 959px) {
+.0800 { 
+  max-width:120px ; /*larg da img - Caffo*/
+  
+}
+}
+
+/* Only Tablets (Portrait) and Phones (Landscape) */
+@media (min-width: 480px) and (max-width: 959px) {
+
+	/* Layout */
+	/*#menu { float: left; width: 100%; }*/
+	
+	#menu {
+float: right;
+width: 74% !important;
+}
+
+
+.menu-dropdown a.level1.parent > span, .menu-dropdown span.level1.parent > span {
+padding: 0 5px !important;
+background-image: none;
+color: #000;
+font-size: 12px !important; 
+font-family: 'Roboto Condensed', sans-serif !important;
+}
+
+.menu-dropdown a.level1 > span, .menu-dropdown span.level1 > span {
+color: #000;
+font-size: 12px !important; 
+font-family: 'Roboto Condensed', sans-serif !important;
+padding: 0 5px !important;
+}
+
+#header {
+margin: 10px 10px 0px 10px;
+background-image: url(../../../images/cordvida/barrinhacolorida.jpg);
+background-repeat: no-repeat;
+background-position-y: 76px;
+background-position-x: 188px !important;
+}
+
+h1.nivo-title {
+font-size: 32px;
+}
+
+}
+
+/* Only Phones */
+@media (max-width: 767px) {
+
+	/* Layout 
+	#toolbar, caffo*/
+	#logo,
+	#menu,
+	#breadcrumbs,
+	#search, /*caffo*/
+	#totop-scroller { display: none; }
+
+	/* System All */
+	#header-responsive .searchbox { width: 41%; }
+
+}
+
+/* Only Phones (Landscape) */
+@media (min-width: 480px) and (max-width: 767px) {
+	h1.nivo-title {	
+	font-size:22px;
+	line-height:20px;
+	}
+
+}
+
+/* Only Phones (Portrait) */
+@media (max-width: 479px) {
+
+	/* System */
+	#system .items .item,
+	#system .items .item:first-child {
+		margin-top: 12px;
+		padding-top: 18px;
+		border-top-width: 1px;
+		box-shadow: 0 1px 0 rgba(255,255,255,1) inset;
+	}
+
+	#system .items :first-child .item:first-child {
+		margin-top: 0;
+		padding-top: 0;
+		border-width: 0;
+	}
+
+	#system .items .leading .item {
+		margin-bottom: 0;
+		padding-bottom: 0;
+		border-width: 0;
+		box-shadow: none;
+	}
+
+	.grid-h .mod-line:before {
+		top: -12px;
+		left: 0;
+		right: 0;
+		border-left: none;
+		border-top: 1px solid #d4d4d4;
+		border-top: 1px solid rgba(0,0,0,0.1);
+		box-shadow: 0 1px 0 rgba(255,255,255,0.4) inset;
+	}
+
+	.grid-h:first-child .mod-line:before { box-shadow: none; }
+	
+}

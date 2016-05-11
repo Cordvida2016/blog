@@ -1,0 +1,21 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 { font-family: "YanoneKaffeesatzLight"; }
+
+h1 { 
+	/*font-family: 'Loved by the King', cursive*/;
+	/*font-family: 'Architects Daughter', cursive;*/
+	/*font-family: 'Gloria Hallelujah', cursive;*/
+	/*font-family: 'Just Me Again Down Here', cursive;*/
+	font-size: 26px; line-height: 30px; /*caffo 48px*/ }
+h2 { font-size: 18px; line-height: 18px; /*caffo 36px*/}
+h3 { font-size: 16px; line-height: 16px; /*caffo 24px*/}
+h4, h5, h6 { font-size: 12px; line-height: 12px; /*caffo 22px*/}
+
+.quote h1 { line-height: 40px; font-size: 40px; /*caffo 60px*/}
+.quote h2 { line-height: 20px; font-size: 20px; /*caffo 40px*/}

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" client="administrator" method="upgrade" version="1.5.0" position="icon">
+	<name>Landing Pages Designer Stats (admin)</name>
+	<author>JoomlaWorks</author>
+	<creationDate>December 9th, 2011</creationDate>
+	<copyright>Copyright (c) 2006 - 2011 JoomlaWorks Ltd. All rights reserved.</copyright>
+	<authorEmail>contact@joomlaworks.gr</authorEmail>
+	<authorUrl>www.joomlaworks.gr</authorUrl>
+	<version>2.5.4</version>
+	<description>LPD_STATS_FOR_USE_IN_THE_LPD_DASHBOARD_PAGE</description>
+	<files>
+		<filename module="mod_lpd_stats">mod_lpd_stats.php</filename>
+		<file>helper.php</file>
+		<folder>tmpl</folder>
+	</files>
+	<params>
+		<param name="latestItems" type="radio" default="1" label="LPD_LATEST_ITEMS_TAB">
+			<option value="0">LPD_DISABLE</option>
+			<option value="1">LPD_ENABLE</option>
+		</param>
+		<param name="popularItems" type="radio" default="1" label="LPD_POPULAR_ITEMS_TAB">
+			<option value="0">LPD_DISABLE</option>
+			<option value="1">LPD_ENABLE</option>
+		</param>
+		<param name="mostCommentedItems" type="radio" default="1" label="LPD_MOST_COMMENTED_ITEMS_TAB">
+			<option value="0">LPD_DISABLE</option>
+			<option value="1">LPD_ENABLE</option>
+		</param>
+		<param name="latestComments" type="radio" default="1" label="LPD_LATEST_COMMENTS_TAB">
+			<option value="0">LPD_DISABLE</option>
+			<option value="1">LPD_ENABLE</option>
+		</param>
+		<param name="statistics" type="radio" default="1" label="LPD_STATISTICS_TAB">
+			<option value="0">LPD_DISABLE</option>
+			<option value="1">LPD_ENABLE</option>
+		</param>
+	</params>
+	<params group="advanced">
+		<param name="cache" type="list" default="0" label="LPD_CACHING" description="LPD_SELECT_WHETHER_TO_CACHE_THE_CONTENT_OF_THIS_MODULE">
+			<option value="0">LPD_NO_CACHING</option>
+			<option value="1">LPD_USE_GLOBAL</option>
+		</param>
+		<param name="cache_time" type="text" default="900" label="LPD_CACHE_TIME" description="LPD_THE_TIME_IN_SECONDS_BEFORE_THE_MODULE_IS_RECACHED"/>
+	</params>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="latestItems" type="radio" default="1" label="LPD_LATEST_ITEMS_TAB">
+					<option value="0">LPD_DISABLE</option>
+					<option value="1">LPD_ENABLE</option>
+				</field>
+				<field name="popularItems" type="radio" default="1" label="LPD_POPULAR_ITEMS_TAB">
+					<option value="0">LPD_DISABLE</option>
+					<option value="1">LPD_ENABLE</option>
+				</field>
+				<field name="mostCommentedItems" type="radio" default="1" label="LPD_MOST_COMMENTED_ITEMS_TAB">
+					<option value="0">LPD_DISABLE</option>
+					<option value="1">LPD_ENABLE</option>
+				</field>
+				<field name="latestComments" type="radio" default="1" label="LPD_LATEST_COMMENTS_TAB">
+					<option value="0">LPD_DISABLE</option>
+					<option value="1">LPD_ENABLE</option>
+				</field>
+				<field name="statistics" type="radio" default="1" label="LPD_STATISTICS_TAB">
+					<option value="0">LPD_DISABLE</option>
+					<option value="1">LPD_ENABLE</option>
+				</field>
+			</fieldset>
+			<fieldset name="advanced">
+				<field name="cache" type="list" default="0" label="LPD_CACHING" description="LPD_SELECT_WHETHER_TO_CACHE_THE_CONTENT_OF_THIS_MODULE">
+					<option value="0">LPD_NO_CACHING</option>
+					<option value="1">LPD_USE_GLOBAL</option>
+				</field>
+				<field name="cache_time" type="text" default="900" label="LPD_CACHE_TIME" description="LPD_THE_TIME_IN_SECONDS_BEFORE_THE_MODULE_IS_RECACHED"/>
+			</fieldset>
+		</fields>
+	</config>
+</install>

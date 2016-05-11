@@ -1,0 +1,32 @@
+/*
+# ------------------------------------------------------------------------
+# SlideShow Pro SP2 module for Joomla 2.5.x and 3.x
+# ------------------------------------------------------------------------
+# Copyright (C) 2010 - 2013 JoomShaper.com. All Rights Reserved.
+# @license - PHP files are GNU/GPL V2. CSS / JS are Copyrighted Commercial,
+# Author: JoomShaper.com
+# Websites:  http://www.joomshaper.com
+# Redistribution, Modification or Re-licensing of this file in part of full, 
+# is bound by the License applied. 
+# ------------------------------------------------------------------------
+*/
+.sp-slide {overflow:hidden}
+.preload{background:url(../images/loading.gif) no-repeat center;visibility:visible;background-color:#fff;z-index:120}
+.sp-slide-content{overflow:hidden}
+.image-block{position:absolute}
+div .sp-slide-desc{bottom:100px;width:auto;background:url(../images/desc-bg.png);height:100px}
+div .controllers{height:auto;left:auto;right:0;position:absolute;top:0;overflow:hidden;z-index:100}
+div .controllers h4{color:#333;font-size:11px;margin:5px 0;padding:0}
+.controllers div.handles{cursor:pointer;display:block;float:right;overflow:hidden;z-index:100}
+.thumb_bg,.thumb_arrow{float:left;cursor:pointer;display:block;overflow:hidden;z-index:100}
+.thumb_bg{background:#cacccd url(../images/border1.gif) repeat-x 0 100%}
+.handles.active .thumb_arrow{background:url(../images/active-thumb1.png) no-repeat 100% 50%;z-index:100}
+.handles.active .thumb_bg{background:#fff;z-index:100}
+.controllers div.handles.active h4{color:#666}
+img.sp-slide-image{background:#f2f2f2;border:1px solid #fff;float:left;margin:0 10px 0 0;padding:5px}
+p.thumb-intro{line-height:normal;margin:0;padding:0}
+p.sp-slide-intro{line-height:18px;margin:0;padding:0}
+.sp-slide-inner,.controllers .sp-slide-inside{padding:10px}
+.sp_slide_prev,.sp_slide_next{width:33px;height:50px;margin-top:-25px;position:absolute;top:50%;z-index:1;cursor:pointer}
+.sp_slide_prev{left:0;background:url(../images/prev.png) no-repeat center}
+.sp_slide_next{right:0;background:url(../images/next.png) no-repeat center}

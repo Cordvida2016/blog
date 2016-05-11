@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.0" method="upgrade">
+	<name>SmartFormer Gold</name>
+	<creationDate>July 2013</creationDate>
+	<author>IToris Inc.</author>
+	<authorEmail>sales@itoris.com</authorEmail>
+	<authorUrl>www.itoris.com</authorUrl>
+	<copyright>IToris Inc.</copyright>
+	<license>Commercial</license>
+	<version>1.5.3</version>
+	<description>
+		Smart Former Gold is the Professional Visual Form Builder for Joomla 1.5.x - Joomla 3.0.x websites
+	</description>
+	<uninstall>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+		</sql>
+	</uninstall>
+	<administration>
+		<menu img="class:component" link="index.php?option=com_sfg">SmartFormer Gold</menu>
+		<submenu>
+			<menu link="index.php?option=com_sfg" img="class:component">Form Manager</menu>
+			<menu link="index.php?option=com_sfg&amp;task=plugins" img="class:component">SFG Plugin Manager</menu>
+		</submenu>
+	</administration>
+</extension>

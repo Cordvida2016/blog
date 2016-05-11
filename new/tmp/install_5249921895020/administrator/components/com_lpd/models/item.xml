@@ -1,0 +1,778 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <name>LPD_ITEM_EDIT_FORM</name>
+  <params group="item-view-options-listings" addpath="/administrator/components/com_lpd/elements">
+    <param name="catItemTitle" type="list" default="" label="LPD_TITLE" description="">
+      <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+      <option value="0">LPD_HIDE</option>
+      <option value="1">LPD_SHOW</option>
+    </param>
+    <param name="catItemTitleLinked" type="list" default="" label="LPD_LINK_ON_TITLE" description="">
+      <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+      <option value="0">LPD_HIDE</option>
+      <option value="1">LPD_SHOW</option>
+    </param>
+    <param name="catItemFeaturedNotice" type="list" default="" label="LPD_FEATURED_NOTICE_NEXT_TO_TITLE" description="">
+      <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+      <option value="0">LPD_HIDE</option>
+      <option value="1">LPD_SHOW</option>
+    </param>
+    <param name="catItemAuthor" type="list" default="" label="LPD_AUTHOR" description="">
+      <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+      <option value="0">LPD_HIDE</option>
+      <option value="1">LPD_SHOW</option>
+    </param>
+    <param name="catItemDateCreated" type="list" default="" label="LPD_ITEM_CREATED_DATE_AND_TIME" description="">
+      <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+      <option value="0">LPD_HIDE</option>
+      <option value="1">LPD_SHOW</option>
+    </param>
+    <param name="catItemRating" type="list" default="" label="LPD_RATING_VOTING" description="">
+      <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+      <option value="0">LPD_HIDE</option>
+      <option value="1">LPD_SHOW</option>
+    </param>
+    <param name="catItemImage" type="list" default="" label="LPD_IMAGE" description="">
+      <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+      <option value="0">LPD_HIDE</option>
+      <option value="1">LPD_SHOW</option>
+    </param>
+    <param name="catItemIntroText" type="list" default="" label="LPD_INTROTEXT" description="">
+      <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+      <option value="0">LPD_HIDE</option>
+      <option value="1">LPD_SHOW</option>
+    </param>
+    <param name="catItemExtraFields" type="list" default="" label="LPD_EXTRA_FIELDS" description="">
+      <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+      <option value="0">LPD_HIDE</option>
+      <option value="1">LPD_SHOW</option>
+    </param>
+    <param name="catItemHits" type="list" default="" label="LPD_HITS" description="">
+      <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+      <option value="0">LPD_HIDE</option>
+      <option value="1">LPD_SHOW</option>
+    </param>
+    <param name="catItemCategory" type="list" default="" label="LPD_CATEGORY" description="">
+      <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+      <option value="0">LPD_HIDE</option>
+      <option value="1">LPD_SHOW</option>
+    </param>
+    <param name="catItemTags" type="list" default="" label="LPD_TAGS" description="">
+      <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+      <option value="0">LPD_HIDE</option>
+      <option value="1">LPD_SHOW</option>
+    </param>
+    <param name="catItemAttachments" type="list" default="" label="LPD_ATTACHMENTS" description="">
+      <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+      <option value="0">LPD_HIDE</option>
+      <option value="1">LPD_SHOW</option>
+    </param>
+    <param name="catItemAttachmentsCounter" type="list" default="" label="LPD_ATTACHMENTS_COUNTER" description="">
+      <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+      <option value="0">LPD_HIDE</option>
+      <option value="1">LPD_SHOW</option>
+    </param>
+    <param name="catItemVideo" type="list" default="" label="LPD_MEDIA" description="">
+      <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+      <option value="0">LPD_HIDE</option>
+      <option value="1">LPD_SHOW</option>
+    </param>
+    <param name="catItemVideoWidth" type="text" default="" size="4" label="LPD_VIDEO_WIDTH" description=""/>
+    <param name="catItemVideoHeight" type="text" default="" size="4" label="LPD_VIDEO_HEIGHT" description=""/>
+    <param name="catItemAudioWidth" type="text" default="" size="4" label="LPD_AUDIO_WIDTH" description=""/>
+    <param name="catItemAudioHeight" type="text" default="" size="4" label="LPD_AUDIO_HEIGHT" description=""/>
+    <param name="catItemVideoAutoPlay" type="list" default="" label="LPD_MEDIA_AUTOPLAY" description="">
+      <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+      <option value="0">LPD_NO</option>
+      <option value="1">LPD_YES</option>
+    </param>
+    <param name="catItemImageGallery" type="list" default="" label="LPD_IMAGE_GALLERY" description="">
+      <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+      <option value="0">LPD_HIDE</option>
+      <option value="1">LPD_SHOW</option>
+    </param>
+    <param name="catItemDateModified" type="list" default="" label="LPD_ITEM_MODIFIED_DATE_AND_TIME" description="">
+      <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+      <option value="0">LPD_HIDE</option>
+      <option value="1">LPD_SHOW</option>
+    </param>
+    <param name="catItemReadMore" type="list" default="" label="LPD_READ_MORE_LINK" description="">
+      <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+      <option value="0">LPD_HIDE</option>
+      <option value="1">LPD_SHOW</option>
+    </param>
+    <param name="catItemCommentsAnchor" type="list" default="" label="LPD_ANCHOR_LINK_WITH_COMMENTS_COUNTER_TO_ITEMS_COMMENT_FORM" description="">
+      <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+      <option value="0">LPD_HIDE</option>
+      <option value="1">LPD_SHOW</option>
+    </param>
+    <param name="" type="header" default="LPD_ADVANCED" label="" description=""/>
+    <param name="catItemLPDPlugins" type="list" default="" label="LPD_ENABLE_LPD_PLUGINS" description="">
+      <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+      <option value="0">LPD_NO</option>
+      <option value="1">LPD_YES</option>
+    </param>
+  </params>
+  <params group="item-view-options" addpath="/administrator/components/com_lpd/elements">
+    <param name="itemDateCreated" type="list" default="" label="LPD_ITEM_CREATED_DATE_AND_TIME" description="">
+      <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+      <option value="0">LPD_HIDE</option>
+      <option value="1">LPD_SHOW</option>
+    </param>
+    <param name="itemTitle" type="list" default="" label="LPD_TITLE" description="">
+      <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+      <option value="0">LPD_HIDE</option>
+      <option value="1">LPD_SHOW</option>
+    </param>
+    <param name="itemFeaturedNotice" type="list" default="" label="LPD_FEATURED_NOTICE_NEXT_TO_TITLE" description="">
+      <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+      <option value="0">LPD_HIDE</option>
+      <option value="1">LPD_SHOW</option>
+    </param>
+    <param name="itemAuthor" type="list" default="" label="LPD_AUTHOR" description="">
+      <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+      <option value="0">LPD_HIDE</option>
+      <option value="1">LPD_SHOW</option>
+    </param>
+    <param name="itemFontResizer" type="list" default="" label="LPD_FONT_RESIZER" description="">
+      <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+      <option value="0">LPD_HIDE</option>
+      <option value="1">LPD_SHOW</option>
+    </param>
+    <param name="itemPrintButton" type="list" default="" label="LPD_PRINT_BUTTON" description="">
+      <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+      <option value="0">LPD_HIDE</option>
+      <option value="1">LPD_SHOW</option>
+    </param>
+    <param name="itemEmailButton" type="list" default="" label="LPD_EMAIL_BUTTON" description="">
+      <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+      <option value="0">LPD_HIDE</option>
+      <option value="1">LPD_SHOW</option>
+    </param>
+    <param name="itemSocialButton" type="list" default="" label="LPD_SOCIAL_BUTTON_LIKE_SHARETHIS_ADDTHIS_ETC" description="">
+      <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+      <option value="0">LPD_HIDE</option>
+      <option value="1">LPD_SHOW</option>
+    </param>
+    <param name="itemVideoAnchor" type="list" default="" label="LPD_ANCHOR_LINK_TO_VIDEO" description="">
+      <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+      <option value="0">LPD_HIDE</option>
+      <option value="1">LPD_SHOW</option>
+    </param>
+    <param name="itemImageGalleryAnchor" type="list" default="" label="LPD_ANCHOR_LINK_TO_IMAGE_GALLERY" description="">
+      <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+      <option value="0">LPD_HIDE</option>
+      <option value="1">LPD_SHOW</option>
+    </param>
+    <param name="itemCommentsAnchor" type="list" default="" label="LPD_ANCHOR_LINK_WITH_COMMENTS_COUNTER_TO_COMMENT_FORM" description="">
+      <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+      <option value="0">LPD_HIDE</option>
+      <option value="1">LPD_SHOW</option>
+    </param>
+    <param name="itemRating" type="list" default="" label="LPD_RATING_VOTING" description="">
+      <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+      <option value="0">LPD_HIDE</option>
+      <option value="1">LPD_SHOW</option>
+    </param>
+    <param name="itemImage" type="list" default="" label="LPD_IMAGE" description="">
+      <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+      <option value="0">LPD_HIDE</option>
+      <option value="1">LPD_SHOW</option>
+    </param>
+    <param name="itemImgSize" type="list" default="" label="LPD_IMAGE_SIZE" description="">
+      <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+      <option value="XSmall">LPD_XSMALL</option>
+      <option value="Small">LPD_SMALL</option>
+      <option value="Medium">LPD_MEDIUM</option>
+      <option value="Large">LPD_LARGE</option>
+      <option value="XLarge">LPD_XLARGE</option>
+    </param>
+    <param name="itemImageMainCaption" type="list" default="" label="LPD_IMAGE_CAPTION" description="">
+      <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+      <option value="0">LPD_HIDE</option>
+      <option value="1">LPD_SHOW</option>
+    </param>
+    <param name="itemImageMainCredits" type="list" default="" label="LPD_IMAGE_CREDITS" description="">
+      <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+      <option value="0">LPD_HIDE</option>
+      <option value="1">LPD_SHOW</option>
+    </param>
+    <param name="itemIntroText" type="list" default="" label="LPD_INTROTEXT" description="">
+      <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+      <option value="0">LPD_HIDE</option>
+      <option value="1">LPD_SHOW</option>
+    </param>
+    <param name="itemFullText" type="list" default="" label="LPD_FULLTEXT" description="">
+      <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+      <option value="0">LPD_HIDE</option>
+      <option value="1">LPD_SHOW</option>
+    </param>
+    <param name="itemExtraFields" type="list" default="" label="LPD_EXTRA_FIELDS" description="">
+      <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+      <option value="0">LPD_HIDE</option>
+      <option value="1">LPD_SHOW</option>
+    </param>
+    <param name="itemDateModified" type="list" default="" label="LPD_ITEM_MODIFIED_DATE_AND_TIME" description="">
+      <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+      <option value="0">LPD_HIDE</option>
+      <option value="1">LPD_SHOW</option>
+    </param>
+    <param name="itemHits" type="list" default="" label="LPD_HITS_PAGE_VIEWS" description="">
+      <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+      <option value="0">LPD_HIDE</option>
+      <option value="1">LPD_SHOW</option>
+    </param>
+    <param name="itemCategory" type="list" default="" label="LPD_CATEGORY" description="">
+      <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+      <option value="0">LPD_HIDE</option>
+      <option value="1">LPD_SHOW</option>
+    </param>
+    <param name="itemTags" type="list" default="" label="LPD_TAGS" description="">
+      <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+      <option value="0">LPD_HIDE</option>
+      <option value="1">LPD_SHOW</option>
+    </param>
+    <param name="itemAttachments" type="list" default="" label="LPD_ATTACHMENTS" description="">
+      <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+      <option value="0">LPD_HIDE</option>
+      <option value="1">LPD_SHOW</option>
+    </param>
+    <param name="itemAttachmentsCounter" type="list" default="" label="LPD_ATTACHMENTS_COUNTER" description="">
+      <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+      <option value="0">LPD_HIDE</option>
+      <option value="1">LPD_SHOW</option>
+    </param>
+    <param name="itemVideo" type="list" default="" label="LPD_MEDIA" description="">
+      <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+      <option value="0">LPD_HIDE</option>
+      <option value="1">LPD_SHOW</option>
+    </param>
+    <param name="itemVideoWidth" type="text" default="" size="4" label="LPD_VIDEO_WIDTH" description=""/>
+    <param name="itemVideoHeight" type="text" default="" size="4" label="LPD_VIDEO_HEIGHT" description=""/>
+    <param name="itemAudioWidth" type="text" default="" size="4" label="LPD_AUDIO_WIDTH" description=""/>
+    <param name="itemAudioHeight" type="text" default="" size="4" label="LPD_AUDIO_HEIGHT" description=""/>
+    <param name="itemVideoAutoPlay" type="list" default="" label="LPD_MEDIA_AUTOPLAY" description="">
+      <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+      <option value="0">LPD_NO</option>
+      <option value="1">LPD_YES</option>
+    </param>
+    <param name="itemVideoCaption" type="list" default="" label="LPD_MEDIA_CAPTION" description="">
+      <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+      <option value="0">LPD_HIDE</option>
+      <option value="1">LPD_SHOW</option>
+    </param>
+    <param name="itemVideoCredits" type="list" default="" label="LPD_MEDIA_CREDITS" description="">
+      <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+      <option value="0">LPD_HIDE</option>
+      <option value="1">LPD_SHOW</option>
+    </param>
+    <param name="itemImageGallery" type="list" default="" label="LPD_IMAGE_GALLERY" description="">
+      <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+      <option value="0">LPD_HIDE</option>
+      <option value="1">LPD_SHOW</option>
+    </param>
+    <param name="itemNavigation" type="list" default="" label="LPD_ITEM_NAVIGATION" description="">
+      <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+      <option value="0">LPD_HIDE</option>
+      <option value="1">LPD_SHOW</option>
+    </param>
+    <param name="itemComments" type="list" default="" label="LPD_COMMENTS" description="">
+      <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+      <option value="0">LPD_HIDE</option>
+      <option value="1">LPD_SHOW</option>
+    </param>
+		<param name="" type="header" default="LPD_SOCIAL_SHARING" label="" description=""/>
+    <param name="itemTwitterButton" type="list" default="" label="LPD_TWITTER_SHARE" description="">
+      <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+      <option value="0">LPD_HIDE</option>
+      <option value="1">LPD_SHOW</option>
+    </param>
+    <param name="itemFacebookButton" type="list" default="" label="LPD_FACEBOOK_SHARE" description="">
+      <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+      <option value="0">LPD_HIDE</option>
+      <option value="1">LPD_SHOW</option>
+    </param>
+    <param name="itemGooglePlusOneButton" type="list" default="" label="LPD_GOOGLEPLUSONE_SHARE" description="">
+      <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+      <option value="0">LPD_HIDE</option>
+      <option value="1">LPD_SHOW</option>
+    </param>
+    <param name="" type="header" default="LPD_AUTHOR_OPTIONS" label="" description=""/>
+    <param name="itemAuthorBlock" type="list" default="" label="LPD_DISPLAY_EXTENDED_AUTHOR_INFO" description="">
+      <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+      <option value="0">LPD_HIDE</option>
+      <option value="1">LPD_SHOW</option>
+    </param>
+    <param name="itemAuthorImage" type="list" default="" label="LPD_AUTHOR_IMAGE" description="">
+      <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+      <option value="0">LPD_HIDE</option>
+      <option value="1">LPD_SHOW</option>
+    </param>
+    <param name="itemAuthorDescription" type="list" default="" label="LPD_AUTHOR_DESCRIPTION" description="">
+      <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+      <option value="0">LPD_HIDE</option>
+      <option value="1">LPD_SHOW</option>
+    </param>
+    <param name="itemAuthorURL" type="list" default="" label="LPD_AUTHOR_URL" description="">
+      <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+      <option value="0">LPD_HIDE</option>
+      <option value="1">LPD_SHOW</option>
+    </param>
+    <param name="itemAuthorEmail" type="list" default="" label="LPD_AUTHOR_EMAIL" description="">
+      <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+      <option value="0">LPD_HIDE</option>
+      <option value="1">LPD_SHOW</option>
+    </param>
+    <param name="itemAuthorLatest" type="list" default="" label="LPD_LATEST_ITEMS_FROM_AUTHOR" description="">
+      <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+      <option value="0">LPD_HIDE</option>
+      <option value="1">LPD_SHOW</option>
+		</param>
+		<param name="itemAuthorLatestLimit" type="text" default="" size="4" label="LPD_LIMIT_FOR_LATEST_ITEMS_FROM_AUTHOR" description="LPD_LEAVE_BLANK_TO_INHERIT_FROM_CATEGORY"/>
+		<param name="" type="header" default="LPD_RELATED_ITEMS" label="" description=""/>
+		<param name="itemRelated" type="list" default="" label="LPD_RELATED_ITEMS_BY_TAG" description="">
+			<option value="">LPD_INHERIT_FROM_CATEGORY</option>
+		  <option value="0">LPD_HIDE</option>
+		  <option value="1">LPD_SHOW</option>
+		</param>
+		<param name="itemRelatedLimit" type="text" default="" size="4" label="LPD_RELATED_ITEMS_LIMIT" description=""/>
+		<param name="itemRelatedTitle" type="list" default="" label="LPD_RELATED_ITEMS_TITLE" description="">
+		  <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+		  <option value="0">LPD_HIDE</option>
+		  <option value="1">LPD_SHOW</option>
+		</param>
+		<param name="itemRelatedCategory" type="list" default="" label="LPD_RELATED_ITEMS_CATEGORY" description="">
+		  <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+		  <option value="0">LPD_HIDE</option>
+		  <option value="1">LPD_SHOW</option>
+		</param>
+		<param name="itemRelatedImageSize" type="list" default="" label="LPD_RELATED_ITEMS_IMAGE" description="">
+			<option value="">LPD_INHERIT_FROM_CATEGORY</option>
+			<option value="0">LPD_NONE_SELECTED</option>
+		  <option value="XSmall">LPD_XSMALL</option>
+		  <option value="Small">LPD_SMALL</option>
+		  <option value="Medium">LPD_MEDIUM</option>
+		  <option value="Large">LPD_LARGE</option>
+		  <option value="XLarge">LPD_XLARGE</option>
+		</param>
+		<param name="itemRelatedIntrotext" type="list" default="" label="LPD_RELATED_ITEMS_INTROTEXT" description="">
+		  <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+		  <option value="0">LPD_HIDE</option>
+		  <option value="1">LPD_SHOW</option>
+		</param>
+		<param name="itemRelatedFulltext" type="list" default="" label="LPD_RELATED_ITEMS_FULLTEXT" description="">
+		  <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+		  <option value="0">LPD_HIDE</option>
+		  <option value="1">LPD_SHOW</option>
+		</param>
+		<param name="itemRelatedAuthor" type="list" default="" label="LPD_RELATED_ITEMS_AUTHOR" description="">
+		  <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+		  <option value="0">LPD_HIDE</option>
+		  <option value="1">LPD_SHOW</option>
+		</param>
+		<param name="itemRelatedMedia" type="list" default="" label="LPD_RELATED_ITEMS_MEDIA" description="">
+		  <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+		  <option value="0">LPD_HIDE</option>
+		  <option value="1">LPD_SHOW</option>
+		</param>
+		<param name="itemRelatedImageGallery" type="list" default="" label="LPD_RELATED_ITEMS_IMAGE_GALLERY" description="">
+		  <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+		  <option value="0">LPD_HIDE</option>
+		  <option value="1">LPD_SHOW</option>
+		</param>
+    <param name="" type="header" default="LPD_ADVANCED" label="" description=""/>
+    <param name="itemLPDPlugins" type="list" default="" label="LPD_ENABLE_LPD_PLUGINS" description="">
+      <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+      <option value="0">LPD_NO</option>
+      <option value="1">LPD_YES</option>
+    </param>
+  </params>
+  <fields name="params">
+    <fieldset name="item-view-options-listings" addfieldpath="/administrator/components/com_lpd/elements">
+      <field name="catItemTitle" type="list" default="" label="LPD_TITLE" description="">
+        <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+        <option value="0">LPD_HIDE</option>
+        <option value="1">LPD_SHOW</option>
+      </field>
+      <field name="catItemTitleLinked" type="list" default="" label="LPD_LINK_ON_TITLE" description="">
+        <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+        <option value="0">LPD_HIDE</option>
+        <option value="1">LPD_SHOW</option>
+      </field>
+      <field name="catItemFeaturedNotice" type="list" default="" label="LPD_FEATURED_NOTICE_NEXT_TO_TITLE" description="">
+        <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+        <option value="0">LPD_HIDE</option>
+        <option value="1">LPD_SHOW</option>
+      </field>
+      <field name="catItemAuthor" type="list" default="" label="LPD_AUTHOR" description="">
+        <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+        <option value="0">LPD_HIDE</option>
+        <option value="1">LPD_SHOW</option>
+      </field>
+      <field name="catItemDateCreated" type="list" default="" label="LPD_ITEM_CREATED_DATE_AND_TIME" description="">
+        <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+        <option value="0">LPD_HIDE</option>
+        <option value="1">LPD_SHOW</option>
+      </field>
+      <field name="catItemRating" type="list" default="" label="LPD_RATING_VOTING" description="">
+        <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+        <option value="0">LPD_HIDE</option>
+        <option value="1">LPD_SHOW</option>
+      </field>
+      <field name="catItemImage" type="list" default="" label="LPD_IMAGE" description="">
+        <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+        <option value="0">LPD_HIDE</option>
+        <option value="1">LPD_SHOW</option>
+      </field>
+      <field name="catItemIntroText" type="list" default="" label="LPD_INTROTEXT" description="">
+        <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+        <option value="0">LPD_HIDE</option>
+        <option value="1">LPD_SHOW</option>
+      </field>
+      <field name="catItemExtraFields" type="list" default="" label="LPD_EXTRA_FIELDS" description="">
+        <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+        <option value="0">LPD_HIDE</option>
+        <option value="1">LPD_SHOW</option>
+      </field>
+      <field name="catItemHits" type="list" default="" label="LPD_HITS" description="">
+        <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+        <option value="0">LPD_HIDE</option>
+        <option value="1">LPD_SHOW</option>
+      </field>
+      <field name="catItemCategory" type="list" default="" label="LPD_CATEGORY" description="">
+        <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+        <option value="0">LPD_HIDE</option>
+        <option value="1">LPD_SHOW</option>
+      </field>
+      <field name="catItemTags" type="list" default="" label="LPD_TAGS" description="">
+        <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+        <option value="0">LPD_HIDE</option>
+        <option value="1">LPD_SHOW</option>
+      </field>
+      <field name="catItemAttachments" type="list" default="" label="LPD_ATTACHMENTS" description="">
+        <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+        <option value="0">LPD_HIDE</option>
+        <option value="1">LPD_SHOW</option>
+      </field>
+      <field name="catItemAttachmentsCounter" type="list" default="" label="LPD_ATTACHMENTS_COUNTER" description="">
+        <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+        <option value="0">LPD_HIDE</option>
+        <option value="1">LPD_SHOW</option>
+      </field>
+      <field name="catItemVideo" type="list" default="" label="LPD_MEDIA" description="">
+        <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+        <option value="0">LPD_HIDE</option>
+        <option value="1">LPD_SHOW</option>
+      </field>
+      <field name="catItemVideoWidth" type="text" default="" size="4" label="LPD_VIDEO_WIDTH" description=""/>
+      <field name="catItemVideoHeight" type="text" default="" size="4" label="LPD_VIDEO_HEIGHT" description=""/>
+      <field name="catItemAudioWidth" type="text" default="" size="4" label="LPD_AUDIO_WIDTH" description=""/>
+      <field name="catItemAudioHeight" type="text" default="" size="4" label="LPD_AUDIO_HEIGHT" description=""/>
+      <field name="catItemVideoAutoPlay" type="list" default="" label="LPD_MEDIA_AUTOPLAY" description="">
+        <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+        <option value="0">LPD_NO</option>
+        <option value="1">LPD_YES</option>
+      </field>
+      <field name="catItemImageGallery" type="list" default="" label="LPD_IMAGE_GALLERY" description="">
+        <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+        <option value="0">LPD_HIDE</option>
+        <option value="1">LPD_SHOW</option>
+      </field>
+      <field name="catItemDateModified" type="list" default="" label="LPD_ITEM_MODIFIED_DATE_AND_TIME" description="">
+        <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+        <option value="0">LPD_HIDE</option>
+        <option value="1">LPD_SHOW</option>
+      </field>
+      <field name="catItemReadMore" type="list" default="" label="LPD_READ_MORE_LINK" description="">
+        <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+        <option value="0">LPD_HIDE</option>
+        <option value="1">LPD_SHOW</option>
+      </field>
+      <field name="catItemCommentsAnchor" type="list" default="" label="LPD_ANCHOR_LINK_WITH_COMMENTS_COUNTER_TO_ITEMS_COMMENT_FORM" description="">
+        <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+        <option value="0">LPD_HIDE</option>
+        <option value="1">LPD_SHOW</option>
+      </field>
+      <field name="" type="header" default="LPD_ADVANCED" label="" description=""/>
+      <field name="catItemLPDPlugins" type="list" default="" label="LPD_ENABLE_LPD_PLUGINS" description="">
+        <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+        <option value="0">LPD_NO</option>
+        <option value="1">LPD_YES</option>
+      </field>
+    </fieldset>
+    <fieldset name="item-view-options" addfieldpath="/administrator/components/com_lpd/elements">
+      <field name="itemDateCreated" type="list" default="" label="LPD_ITEM_CREATED_DATE_AND_TIME" description="">
+        <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+        <option value="0">LPD_HIDE</option>
+        <option value="1">LPD_SHOW</option>
+      </field>
+      <field name="itemTitle" type="list" default="" label="LPD_TITLE" description="">
+        <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+        <option value="0">LPD_HIDE</option>
+        <option value="1">LPD_SHOW</option>
+      </field>
+      <field name="itemFeaturedNotice" type="list" default="" label="LPD_FEATURED_NOTICE_NEXT_TO_TITLE" description="">
+        <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+        <option value="0">LPD_HIDE</option>
+        <option value="1">LPD_SHOW</option>
+      </field>
+      <field name="itemAuthor" type="list" default="" label="LPD_AUTHOR" description="">
+        <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+        <option value="0">LPD_HIDE</option>
+        <option value="1">LPD_SHOW</option>
+      </field>
+      <field name="itemFontResizer" type="list" default="" label="LPD_FONT_RESIZER" description="">
+        <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+        <option value="0">LPD_HIDE</option>
+        <option value="1">LPD_SHOW</option>
+      </field>
+      <field name="itemPrintButton" type="list" default="" label="LPD_PRINT_BUTTON" description="">
+        <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+        <option value="0">LPD_HIDE</option>
+        <option value="1">LPD_SHOW</option>
+      </field>
+      <field name="itemEmailButton" type="list" default="" label="LPD_EMAIL_BUTTON" description="">
+        <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+        <option value="0">LPD_HIDE</option>
+        <option value="1">LPD_SHOW</option>
+      </field>
+      <field name="itemSocialButton" type="list" default="" label="LPD_SOCIAL_BUTTON_LIKE_SHARETHIS_ADDTHIS_ETC" description="">
+        <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+        <option value="0">LPD_HIDE</option>
+        <option value="1">LPD_SHOW</option>
+      </field>
+      <field name="itemVideoAnchor" type="list" default="" label="LPD_ANCHOR_LINK_TO_VIDEO" description="">
+        <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+        <option value="0">LPD_HIDE</option>
+        <option value="1">LPD_SHOW</option>
+      </field>
+      <field name="itemImageGalleryAnchor" type="list" default="" label="LPD_ANCHOR_LINK_TO_IMAGE_GALLERY" description="">
+        <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+        <option value="0">LPD_HIDE</option>
+        <option value="1">LPD_SHOW</option>
+      </field>
+      <field name="itemCommentsAnchor" type="list" default="" label="LPD_ANCHOR_LINK_WITH_COMMENTS_COUNTER_TO_COMMENT_FORM" description="">
+        <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+        <option value="0">LPD_HIDE</option>
+        <option value="1">LPD_SHOW</option>
+      </field>
+      <field name="itemRating" type="list" default="" label="LPD_RATING_VOTING" description="">
+        <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+        <option value="0">LPD_HIDE</option>
+        <option value="1">LPD_SHOW</option>
+      </field>
+      <field name="itemImage" type="list" default="" label="LPD_IMAGE" description="">
+        <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+        <option value="0">LPD_HIDE</option>
+        <option value="1">LPD_SHOW</option>
+      </field>
+      <field name="itemImgSize" type="list" default="" label="LPD_IMAGE_SIZE" description="">
+        <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+        <option value="XSmall">LPD_XSMALL</option>
+        <option value="Small">LPD_SMALL</option>
+        <option value="Medium">LPD_MEDIUM</option>
+        <option value="Large">LPD_LARGE</option>
+        <option value="XLarge">LPD_XLARGE</option>
+      </field>
+      <field name="itemImageMainCaption" type="list" default="" label="LPD_IMAGE_CAPTION" description="">
+        <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+        <option value="0">LPD_HIDE</option>
+        <option value="1">LPD_SHOW</option>
+      </field>
+      <field name="itemImageMainCredits" type="list" default="" label="LPD_IMAGE_CREDITS" description="">
+        <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+        <option value="0">LPD_HIDE</option>
+        <option value="1">LPD_SHOW</option>
+      </field>
+      <field name="itemIntroText" type="list" default="" label="LPD_INTROTEXT" description="">
+        <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+        <option value="0">LPD_HIDE</option>
+        <option value="1">LPD_SHOW</option>
+      </field>
+      <field name="itemFullText" type="list" default="" label="LPD_FULLTEXT" description="">
+        <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+        <option value="0">LPD_HIDE</option>
+        <option value="1">LPD_SHOW</option>
+      </field>
+      <field name="itemExtraFields" type="list" default="" label="LPD_EXTRA_FIELDS" description="">
+        <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+        <option value="0">LPD_HIDE</option>
+        <option value="1">LPD_SHOW</option>
+      </field>
+      <field name="itemDateModified" type="list" default="" label="LPD_ITEM_MODIFIED_DATE_AND_TIME" description="">
+        <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+        <option value="0">LPD_HIDE</option>
+        <option value="1">LPD_SHOW</option>
+      </field>
+      <field name="itemHits" type="list" default="" label="LPD_HITS_PAGE_VIEWS" description="">
+        <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+        <option value="0">LPD_HIDE</option>
+        <option value="1">LPD_SHOW</option>
+      </field>
+      <field name="itemCategory" type="list" default="" label="LPD_CATEGORY" description="">
+        <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+        <option value="0">LPD_HIDE</option>
+        <option value="1">LPD_SHOW</option>
+      </field>
+      <field name="itemTags" type="list" default="" label="LPD_TAGS" description="">
+        <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+        <option value="0">LPD_HIDE</option>
+        <option value="1">LPD_SHOW</option>
+      </field>
+      <field name="itemAttachments" type="list" default="" label="LPD_ATTACHMENTS" description="">
+        <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+        <option value="0">LPD_HIDE</option>
+        <option value="1">LPD_SHOW</option>
+      </field>
+      <field name="itemAttachmentsCounter" type="list" default="" label="LPD_ATTACHMENTS_COUNTER" description="">
+        <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+        <option value="0">LPD_HIDE</option>
+        <option value="1">LPD_SHOW</option>
+      </field>
+      <field name="itemVideo" type="list" default="" label="LPD_MEDIA" description="">
+        <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+        <option value="0">LPD_HIDE</option>
+        <option value="1">LPD_SHOW</option>
+      </field>
+      <field name="itemVideoWidth" type="text" default="" size="4" label="LPD_VIDEO_WIDTH" description=""/>
+      <field name="itemVideoHeight" type="text" default="" size="4" label="LPD_VIDEO_HEIGHT" description=""/>
+      <field name="itemAudioWidth" type="text" default="" size="4" label="LPD_AUDIO_WIDTH" description=""/>
+      <field name="itemAudioHeight" type="text" default="" size="4" label="LPD_AUDIO_HEIGHT" description=""/>
+      <field name="itemVideoAutoPlay" type="list" default="" label="LPD_MEDIA_AUTOPLAY" description="">
+        <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+        <option value="0">LPD_NO</option>
+        <option value="1">LPD_YES</option>
+      </field>
+      <field name="itemVideoCaption" type="list" default="" label="LPD_MEDIA_CAPTION" description="">
+        <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+        <option value="0">LPD_HIDE</option>
+        <option value="1">LPD_SHOW</option>
+      </field>
+      <field name="itemVideoCredits" type="list" default="" label="LPD_MEDIA_CREDITS" description="">
+        <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+        <option value="0">LPD_HIDE</option>
+        <option value="1">LPD_SHOW</option>
+      </field>
+      <field name="itemImageGallery" type="list" default="" label="LPD_IMAGE_GALLERY" description="">
+        <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+        <option value="0">LPD_HIDE</option>
+        <option value="1">LPD_SHOW</option>
+      </field>
+      <field name="itemNavigation" type="list" default="" label="LPD_ITEM_NAVIGATION" description="">
+        <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+        <option value="0">LPD_HIDE</option>
+        <option value="1">LPD_SHOW</option>
+      </field>
+      <field name="itemComments" type="list" default="" label="LPD_COMMENTS" description="">
+        <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+        <option value="0">LPD_HIDE</option>
+        <option value="1">LPD_SHOW</option>
+      </field>
+			<field name="" type="header" default="LPD_SOCIAL_SHARING" label="" description=""/>
+	    <field name="itemTwitterButton" type="list" default="" label="LPD_TWITTER_SHARE" description="">
+	      <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+	      <option value="0">LPD_HIDE</option>
+	      <option value="1">LPD_SHOW</option>
+	    </field>
+	    <field name="itemFacebookButton" type="list" default="" label="LPD_FACEBOOK_SHARE" description="">
+	      <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+	      <option value="0">LPD_HIDE</option>
+	      <option value="1">LPD_SHOW</option>
+	    </field>
+	    <field name="itemGooglePlusOneButton" type="list" default="" label="LPD_GOOGLEPLUSONE_SHARE" description="">
+	      <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+	      <option value="0">LPD_HIDE</option>
+	      <option value="1">LPD_SHOW</option>
+	    </field>
+      <field name="" type="header" default="LPD_AUTHOR_OPTIONS" label="" description=""/>
+      <field name="itemAuthorBlock" type="list" default="" label="LPD_DISPLAY_EXTENDED_AUTHOR_INFO" description="">
+        <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+        <option value="0">LPD_HIDE</option>
+        <option value="1">LPD_SHOW</option>
+      </field>
+      <field name="itemAuthorImage" type="list" default="" label="LPD_AUTHOR_IMAGE" description="">
+        <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+        <option value="0">LPD_HIDE</option>
+        <option value="1">LPD_SHOW</option>
+      </field>
+      <field name="itemAuthorDescription" type="list" default="" label="LPD_AUTHOR_DESCRIPTION" description="">
+        <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+        <option value="0">LPD_HIDE</option>
+        <option value="1">LPD_SHOW</option>
+      </field>
+      <field name="itemAuthorURL" type="list" default="" label="LPD_AUTHOR_URL" description="">
+        <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+        <option value="0">LPD_HIDE</option>
+        <option value="1">LPD_SHOW</option>
+      </field>
+      <field name="itemAuthorEmail" type="list" default="" label="LPD_AUTHOR_EMAIL" description="">
+        <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+        <option value="0">LPD_HIDE</option>
+        <option value="1">LPD_SHOW</option>
+      </field>
+      <field name="itemAuthorLatest" type="list" default="" label="LPD_LATEST_ITEMS_FROM_AUTHOR" description="">
+        <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+        <option value="0">LPD_HIDE</option>
+        <option value="1">LPD_SHOW</option>
+      </field>
+      <field name="itemAuthorLatestLimit" type="text" default="" size="4" label="LPD_LIMIT_FOR_LATEST_ITEMS_FROM_AUTHOR" description="LPD_LEAVE_BLANK_TO_INHERIT_FROM_CATEGORY"/>
+			<field name="" type="header" default="LPD_RELATED_ITEMS" label="" description=""/>
+			<field name="itemRelated" type="list" default="" label="LPD_RELATED_ITEMS_BY_TAG" description="">
+				<option value="">LPD_INHERIT_FROM_CATEGORY</option>
+			  <option value="0">LPD_HIDE</option>
+			  <option value="1">LPD_SHOW</option>
+			</field>
+			<field name="itemRelatedLimit" type="text" default="" size="4" label="LPD_RELATED_ITEMS_LIMIT" description=""/>
+			<field name="itemRelatedTitle" type="list" default="" label="LPD_RELATED_ITEMS_TITLE" description="">
+			  <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+			  <option value="0">LPD_HIDE</option>
+			  <option value="1">LPD_SHOW</option>
+			</field>
+			<field name="itemRelatedCategory" type="list" default="" label="LPD_RELATED_ITEMS_CATEGORY" description="">
+			  <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+			  <option value="0">LPD_HIDE</option>
+			  <option value="1">LPD_SHOW</option>
+			</field>
+			<field name="itemRelatedImageSize" type="list" default="" label="LPD_RELATED_ITEMS_IMAGE" description="">
+				<option value="">LPD_INHERIT_FROM_CATEGORY</option>
+				<option value="0">LPD_NONE_SELECTED</option>
+			  <option value="XSmall">LPD_XSMALL</option>
+			  <option value="Small">LPD_SMALL</option>
+			  <option value="Medium">LPD_MEDIUM</option>
+			  <option value="Large">LPD_LARGE</option>
+			  <option value="XLarge">LPD_XLARGE</option>
+			</field>
+			<field name="itemRelatedIntrotext" type="list" default="" label="LPD_RELATED_ITEMS_INTROTEXT" description="">
+			  <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+			  <option value="0">LPD_HIDE</option>
+			  <option value="1">LPD_SHOW</option>
+			</field>
+			<field name="itemRelatedFulltext" type="list" default="" label="LPD_RELATED_ITEMS_FULLTEXT" description="">
+			  <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+			  <option value="0">LPD_HIDE</option>
+			  <option value="1">LPD_SHOW</option>
+			</field>
+			<field name="itemRelatedAuthor" type="list" default="" label="LPD_RELATED_ITEMS_AUTHOR" description="">
+			  <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+			  <option value="0">LPD_HIDE</option>
+			  <option value="1">LPD_SHOW</option>
+			</field>
+			<field name="itemRelatedMedia" type="list" default="" label="LPD_RELATED_ITEMS_MEDIA" description="">
+			  <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+			  <option value="0">LPD_HIDE</option>
+			  <option value="1">LPD_SHOW</option>
+			</field>
+			<field name="itemRelatedImageGallery" type="list" default="" label="LPD_RELATED_ITEMS_IMAGE_GALLERY" description="">
+			  <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+			  <option value="0">LPD_HIDE</option>
+			  <option value="1">LPD_SHOW</option>
+			</field>
+      <field name="" type="header" default="LPD_ADVANCED" label="" description=""/>
+      <field name="itemLPDPlugins" type="list" default="" label="LPD_ENABLE_LPD_PLUGINS" description="">
+        <option value="">LPD_INHERIT_FROM_CATEGORY</option>
+        <option value="0">LPD_NO</option>
+        <option value="1">LPD_YES</option>
+      </field>
+    </fieldset>
+  </fields>
+</form>

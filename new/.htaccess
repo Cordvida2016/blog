@@ -1,0 +1,166 @@
+##
+# @package		Joomla
+# @copyright	Copyright (C) 2005 - 2013 Open Source Matters. All rights reserved.
+# @license		GNU General Public License version 2 or later; see LICENSE.txt
+##
+
+##
+# READ THIS COMPLETELY IF YOU CHOOSE TO USE THIS FILE!
+#
+# The line just below this section: 'Options +FollowSymLinks' may cause problems
+# with some server configurations.  It is required for use of mod_rewrite, but may already
+# be set by your server administrator in a way that dissallows changing it in
+# your .htaccess file.  If using it causes your server to error out, comment it out (add # to
+# beginning of line), reload your site in your browser and test your sef url's.  If they work,
+# it has been set by your server administrator and you do not need it set here.
+##
+
+## Can be commented out if causes errors, see notes above.
+Options +FollowSymLinks
+
+## Mod_rewrite in use.
+
+RewriteEngine On
+
+## Begin - Rewrite rules to block out some common exploits.
+# If you experience problems on your site block out the operations listed below
+# This attempts to block the most common type of exploit `attempts` to Joomla!
+#
+# Block out any script trying to base64_encode data within the URL.
+RewriteCond %{QUERY_STRING} base64_encode[^(]*\([^)]*\) [OR]
+# Block out any script that includes a <script> tag in URL.
+RewriteCond %{QUERY_STRING} (<|%3C)([^s]*s)+cript.*(>|%3E) [NC,OR]
+# Block out any script trying to set a PHP GLOBALS variable via URL.
+RewriteCond %{QUERY_STRING} GLOBALS(=|\[|\%[0-9A-Z]{0,2}) [OR]
+# Block out any script trying to modify a _REQUEST variable via URL.
+RewriteCond %{QUERY_STRING} _REQUEST(=|\[|\%[0-9A-Z]{0,2})
+# Return 403 Forbidden header and show the content of the root homepage
+RewriteRule .* index.php [F]
+#
+## End - Rewrite rules to block out some common exploits.
+
+## Begin - Custom redirects
+#
+# If you need to redirect some pages, or set a canonical non-www to
+# www redirect (or vice versa), place that code here. Ensure those
+# redirects use the correct RewriteRule syntax and the [R=301,L] flags.
+Redirect 301 /portal/index.php http://cordvida.com.br/new/
+Redirect 301 /portal/celula-tronco-hotsite http://cordvida.com.br/new/hotsite
+Redirect 301 /portal/landingpage-adwords http://cordvida.com.br/new/landing-page
+Redirect 301 /portal/fale-conosco http://cordvida.com.br/new/fale-conosco
+Redirect 301 /portal/stem-cell-review http://cordvida.com.br/new/stem-cell-review
+Redirect 301 /portal/perguntas-frequentes-geral?view=faqbook http://cordvida.com.br/new/perguntas-frequentes-geral
+Redirect 301 /portal/fale-conosco http://cordvida.com.br/new/fale-conosco
+Redirect 301 /portal/index.php/planos-e-servicos/quero-armazenar	http://cordvida.com.br/new/planos-servicos/quero-armazenar
+Redirect 301 /portal/celula-tronco/celula-tronco-o-que-e	http://cordvida.com.br/new/celula-tronco-home/celula-tronco-o-que-e
+Redirect 301 /portal/celula-tronco/cordao-umbilical http://cordvida.com.br/new/celula-tronco-home/o-cordao-umbilical
+Redirect 301 /portal/celula-tronco/sangue-do-cordao http://cordvida.com.br/new/celula-tronco-home/sangue-do-cordao
+Redirect 301 /portal/celula-tronco/tecido-do-cordao http://cordvida.com.br/new/celula-tronco-home/tecido-do-cordao
+Redirect 301 /portal/celula-tronco/tipos-de-utilizacao http://cordvida.com.br/new/celula-tronco-home/tipos-de-utilizacao
+Redirect 301 /portal/celula-tronco/perguntas-frequentes http://cordvida.com.br/new/celula-tronco-home/perguntas-frequentes
+Redirect 301 /portal/por-quearmazenar/sobre-o-armazenamento http://cordvida.com.br/new/por-que-armazenar/sobre-o-armazenamento
+Redirect 301 /portal/por-quearmazenar/processo-de-coleta	http://cordvida.com.br/new/por-que-armazenar/processo-de-coleta
+Redirect 301 /portal/por-quearmazenar/lista-de-doencas-sangue http://cordvida.com.br/new/por-que-armazenar/lista-de-doencas-sangue
+Redirect 301 /portal/por-quearmazenar/lista-de-doencas-tecido http://cordvida.com.br/new/por-que-armazenar/lista-de-doencas-tecido
+Redirect 301 /portal/por-quearmazenar/pesquisa-e-inovacao http://cordvida.com.br/new/por-que-armazenar/pesquisa-e-inovacao
+Redirect 301 /portal/por-quearmazenar/perguntas-frequentes-por-que-armazenar http://cordvida.com.br/new/por-que-armazenar/perguntas-frequentes
+Redirect 301 /portal/porque-cordvida/vantagens-cordvida http://cordvida.com.br/new/por-que-cordvida/vantagens-cordvida
+Redirect 301 /portal/porque-cordvida/diferenciais http://cordvida.com.br/new/por-que-cordvida/diferenciais/diferenciais-cordvida
+Redirect 301 /portal/porque-cordvida/diferenciais/atendimento http://cordvida.com.br/new/por-que-cordvida/diferenciais/atendimento-ao-cliente
+Redirect 301 /portal/porque-cordvida/diferenciais/coleta	http://cordvida.com.br/new/por-que-cordvida/diferenciais/coleta
+Redirect 301 /portal/porque-cordvida/diferenciais/transporte http://cordvida.com.br/new/por-que-cordvida/diferenciais/transporte
+Redirect 301 /portal/porque-cordvida/diferenciais/laboratorio http://cordvida.com.br/new/por-que-cordvida/diferenciais/laboratorio
+Redirect 301 /portal/porque-cordvida/diferenciais/armazenamento http://cordvida.com.br/new/por-que-cordvida/diferenciais/armazenamento
+Redirect 301 /portal/porque-cordvida/diferenciais/seguranca http://cordvida.com.br/new/por-que-cordvida/diferenciais/seguranca
+Redirect 301 /portal/porque-cordvida/diferenciais/uso-da-amostra http://cordvida.com.br/new/por-que-cordvida/diferenciais/uso-da-amostra
+Redirect 301 /portal/porque-cordvida/diferenciais/certificacoes-qualidade-atestada http://cordvida.com.br/new/por-que-cordvida/diferenciais/certificacoes-qualidade
+Redirect 301 /portal/porque-cordvida/diferenciais/pesquisa http://cordvida.com.br/new/por-que-cordvida/diferenciais/pesquisa
+Redirect 301 /portal/porque-cordvida/equipe http://cordvida.com.br/new/por-que-cordvida/equipe
+Redirect 301 /portal/porque-cordvida/perguntas-frequentes-por-que-cordvida http://cordvida.com.br/new/por-que-cordvida/perguntas-frequentes
+Redirect 301 /portal/planos-e-servicos/servicos-sangue-do-cordao http://cordvida.com.br/new/planos-servicos/servicos-sangue-do-cordao
+Redirect 301 /portal/planos-e-servicos/servicos-tecido-do-cordao http://cordvida.com.br/new/planos-servicos/servicos-tecido-do-cordao
+Redirect 301 /portal/planos-e-servicos/condicoes-comerciais http://cordvida.com.br/new/planos-servicos/condicoes-comerciais
+Redirect 301 /portal/planos-e-servicos/passo-a-passo http://cordvida.com.br/new/planos-servicos/passo-a-passo
+Redirect 301 /portal/planos-e-servicos/quero-armazenar http://cordvida.com.br/new/planos-servicos/quero-armazenar
+Redirect 301 /portal/planos-e-servicos/perguntas-frequentes-planos-e-servicos http://cordvida.com.br/new/planos-servicos/perguntas-frequentes
+Redirect 301 /portal/para-a-mamae/historias-de-vida http://cordvida.com.br/new/para-a-mamae/historias-de-vida
+Redirect 301 /portal/para-a-mamae/nossos-videos http://cordvida.com.br/new/para-a-mamae/nossos-videos
+Redirect 301 /portal/para-a-mamae/cursos-cuidados-com-o-bebe http://cordvida.com.br/new/para-a-mamae/curso-cuidados-com-o-bebe
+Redirect 301 /portal/para-a-mamae/projetos-sociais http://cordvida.com.br/new/para-a-mamae/projetos-sociais
+Redirect 301 /portal/para-a-mamae/programa-coleta-solidaria http://cordvida.com.br/new/para-a-mamae/programa-coleta-solidaria
+Redirect 301 /portal/para-a-mamae/programa-indique-um-amigo http://cordvida.com.br/new/para-a-mamae/programa-indique-um-amigo
+Redirect 301 /portal/para-a-mamae/guia-de-pais http://cordvida.com.br/new/para-a-mamae/guia-de-pais
+Redirect 301 /portal/novidades/noticias-celulas-tronco/item/138-ganhadores-do-nobel-detalharam-comunica%C3%A7%C3%A3o-qu%C3%ADmica-entre-c%C3%A9lulas http://cordvida.com.br/new/noticias-celulas-tronco/73-ganhadores-do-nobel-detalharam-comunicacao-quimica-entre-celulas
+Redirect 301 /portal/novidades/noticias-celulas-tronco/item/139-unicamp-desevolve-t%C3%A9cnica-com-c%C3%A9lulas-tronco-para-cicatrizar-feridas http://cordvida.com.br/new/noticias-celulas-tronco/74-unicamp-desevolve-tecnica-com-celulas-tronco-para-cicatrizar-feridas
+Redirect 301 /portal/novidades/noticias-celulas-tronco/item/135-c%C3%A9lulas-embrion%C3%A1rias-ser%C3%A3o-testadas-em-humanos-pela-primeira-vez-no-brasil http://cordvida.com.br/new/noticias-celulas-tronco/75-celulas-embrionarias-serao-testadas-em-humanos-pela-primeira-vez-no-brasil
+Redirect 301 /portal/novidades/noticias-celulas-tronco/item/132-cientistas-criam-f%C3%ADgado-humano-a-partir-de-c%C3%A9lulas-tronco http://cordvida.com.br/new/noticias-celulas-tronco/76-cientistas-criam-figado-humano-a-partir-de-celulas-tronco
+Redirect 301 /portal/novidades/noticias-celulas-tronco/item/127-v%C3%ADtimas-de-avc-mostram-sinais-de-recupera%C3%A7%C3%A3o-com-c%C3%A9lulas-tronco http://cordvida.com.br/new/noticias-celulas-tronco/104-vitimas-de-avc-mostram-sinais-de-recuperacao-com-celulas-troncoaumenta-no-pais
+Redirect 301 /portal/novidades/noticias-celulas-tronco/item/126-tratamento-com-c%C3%A9lulas-tronco-pode-ter-curado-crian%C3%A7a-em-estado-vegetativo http://cordvida.com.br/new/noticias-celulas-tronco/106-tratamento-com-celulas-tronco-pode-ter-curado-crianca-em-estado-vegetativo
+Redirect 301 /portal/novidades/noticias-celulas-tronco/item/125-transplante-in%C3%A9dito-de-cord%C3%A3o-e-medula-cura-menina-com-talassemia http://cordvida.com.br/new/noticias-celulas-tronco/105-transplante-inedito-de-cordao-e-medula-cura-menina-com-talassemia
+Redirect 301 /portal/novidades/noticias-celulas-tronco/item/124-cientistas-imprimem-c%C3%A9lulas-tronco-embrion%C3%A1rias-em-impressora-3d http://cordvida.com.br/new/noticias-celulas-tronco/107-cientistas-imprimem-celulas-tronco-embrionarias-em-impressora-3d
+Redirect 301 /portal/novidades/noticias-celulas-tronco/item/123-tratamento-com-c%C3%A9lulas-tronco-cura-estudante-do-diabetes-tipo-1 http://cordvida.com.br/new/noticias-celulas-tronco/108-tratamento-com-celulas-tronco-cura-estudante-do-diabetes-tipo-1
+Redirect 301 /portal/novidades/noticias-celulas-tronco/item/121-japoneses-anunciam-cria%C3%A7%C3%A3o-de-tecido-renal-a-partir-de-c%C3%A9lulas-tronco http://cordvida.com.br/new/noticias-celulas-tronco/109-japoneses-anunciam-criacao-de-tecido-renal-a-partir-de-celulas-tronco
+Redirect 301 /portal/novidades/noticias-celulas-tronco/item/120-c%C3%A9lulas-tronco-est%C3%A3o-ajudando-a-combater-tipo-perigoso-de-diabetes http://cordvida.com.br/new/noticias-celulas-tronco/110-celulas-tronco-estao-ajudando-a-combater-tipo-perigoso-de-diabetes
+Redirect 301 /portal/novidades/noticias-celulas-tronco/item/119-terapia-com-c%C3%A9lulas-tronco-da-placenta-reduz-progress%C3%A3o-da-fibrose-hep%C3%A1tica http://cordvida.com.br/new/noticias-celulas-tronco/111-terapia-com-celulas-tronco-da-placenta-reduz-progressao-da-fibrose-hepatica
+Redirect 301 /portal/novidades/noticias-celulas-tronco/item/118-pesquisas-com-c%C3%A9lulas-tronco-para-tratar-o-cora%C3%A7%C3%A3o-avan%C3%A7am-no-brasil	http://cordvida.com.br/new/noticias-celulas-tronco/112-pesquisas-com-celulas-tronco-para-tratar-o-coracao-avancam-no-brasil
+Redirect 301 /portal/novidades/noticias-celulas-tronco/item/117-terapia-celular-reduz-tempo-de-regenera%C3%A7%C3%A3o-do-f%C3%ADgado-diz-estudo http://cordvida.com.br/new/noticias-celulas-tronco/113-terapia-celular-reduz-tempo-de-regeneracao-do-figado-diz-estudo
+Redirect 301 /portal/novidades/noticias-celulas-tronco/item/116-cientistas-conseguem-regenerar-cartilagem-com-c%C3%A9lulas-tronco-de-joelho http://cordvida.com.br/new/noticias-celulas-tronco/114-cientistas-conseguem-regenerar-cartilagem-com-celulas-tronco-de-joelho
+Redirect 301 /portal/novidades/noticias-celulas-tronco/item/115-cientistas-criam-c%C3%A9lulas-tronco-do-sangue http://cordvida.com.br/new/noticias-celulas-tronco/115-cientistas-criam-celulas-tronco-do-sangue
+Redirect 301 /portal/novidades/noticias-celulas-tronco/item/114-avan%C3%A7a-a-terapia-celular-para-diabetes-tipo-1 http://cordvida.com.br/new/noticias-celulas-tronco/116-avanca-a-terapia-celular-para-diabetes-tipo-1
+Redirect 301 /portal/novidades/noticias-celulas-tronco/item/113-cientistas-refor%C3%A7am-promessas-de-terapias-baseadas-em-c%C3%A9lulas-tronco http://cordvida.com.br/new/noticias-celulas-tronco/117-cientistas-reforcam-promessas-de-terapias-baseadas-em-celulas-tronco
+Redirect 301 /portal/novidades/noticias-celulas-tronco/item/107-instituto-butantan-cria-banco-in%C3%A9dito-de-c%C3%A9lulas-tronco http://cordvida.com.br/new/noticias-celulas-tronco/123-instituto-butantan-cria-banco-inedito-de-celulas-tronco
+Redirect 301 /portal/novidades/noticias-celulas-tronco/item/105-estudo-usa-c%C3%A9lulas-tronco-de-dente-de-leite-para-regenera%C3%A7%C3%A3o-%C3%B3ssea http://cordvida.com.br/new/noticias-celulas-tronco/124-estudo-usa-celulas-tronco-de-dente-de-leite-para-regeneracao-ossea
+Redirect 301 /portal/novidades/noticias-celulas-tronco/item/103-cientistas-reprogramam-c%C3%A9lulas-tronco-sem-manipula%C3%A7%C3%A3o-gen%C3%A9tica http://cordvida.com.br/new/noticias-celulas-tronco/125-cientistas-reprogramam-celulas-tronco-sem-manipulacao-genetica
+Redirect 301 /portal/novidades/noticias-celulas-tronco/item/101-cientistas-criam-f%C3%ADgado-a-partir-de-c%C3%A9lulas-tronco http://cordvida.com.br/new/noticias-celulas-tronco/127-cientistas-criam-figado-a-partir-de-celulas-tronco
+Redirect 301 /portal/novidades/noticias-celulas-tronco/item/100-participa%C3%A7%C3%A3o-da-cordvida-na-bio-2012-publicada-na-coluna-neg%C3%B3cios-cia http://cordvida.com.br/new/noticias-celulas-tronco/128-participacao-da-cordvida-na-bio-2012-publicada-na-coluna-negocios-cia
+Redirect 301 /portal/novidades/noticias-celulas-tronco/item/99-menina-recebe-veia-transplantada-obtida-de-c%C3%A9lulas-tronco-pr%C3%B3prias http://cordvida.com.br/new/noticias-celulas-tronco/129-menina-recebe-veia-transplantada-obtida-de-celulas-tronco-proprias
+Redirect 301 /portal/novidades/noticias-celulas-tronco/item/102-c%C3%A9lulas-tronco-de-tecido-de-cord%C3%A3o-umbilical-beneficiam-camundongos-com-forma-cong%C3%AAnita-de-distrofia-muscular ttp://cordvida.com.br/new/noticias-celulas-tronco/126-celulas-tronco-de-tecido-de-cordao-umbilical-beneficiam-camundongos-com-forma-congenita-de-distrofia-muscular
+Redirect 301 /portal/novidades/noticias-celulas-tronco/item/80-metade-dos-transplantes-de-c%C3%A9lulas-tronco-de-sangue-de-cord%C3%A3o-umbilical-de-bancos-privados-foram-feitos-com-amostras-armazenadas-na-cordvida http://cordvida.com.br/new/noticias-celulas-tronco/134-metade-dos-transplantes-de-celulas-tronco-de-sangue-de-cordao-umbilical-de-bancos-privados-foram-feitos-com-amostras-armazenadas-na-cordvida
+Redirect 301 /portal/novidades/noticias-celulas-tronco/item/79-cordvida-amplia-sua-atua%C3%A7%C3%A3o-no-pa%C3%ADs http://cordvida.com.br/new/noticias-celulas-tronco/135-cordvida-amplia-sua-atuacao-no-pais
+Redirect 301 /portal/novidades/noticias-celulas-tronco/item/91-cordvida-perfil-institucional http://cordvida.com.br/new/noticias-celulas-tronco/133-cordvida-perfil-institucional
+Redirect 301 /portal/novidades/noticias-celulas-tronco/item/71-pesquisa-promete-a-cura-para-doen%C3%A7as-causadas-por-m%C3%A1-circula%C3%A7%C3%A3o http://cordvida.com.br/new/noticias-celulas-tronco/132-pesquisa-promete-a-cura-para-doencas-causadas-por-ma-circulacao
+Redirect 301 /portal/novidades/noticias-celulas-tronco/item/70-minist%C3%A9rio-da-sa%C3%BAde-anuncia-investimento-de-15-milh%C3%B5es-de-reais-em-pesquisas-com-c%C3%A9lulas-tronco ttp://cordvida.com.br/new/noticias-celulas-tronco/136-ministerio-da-saude-anuncia-investimento-de-15-milhoes-de-reais-em-pesquisas-com-celulas-tronco
+Redirect 301 /portal/novidades/noticias-celulas-tronco/item/96-c%C3%A9lulas-tronco-da-pele-podem-tratar-insufici%C3%AAncia-card%C3%ADaca	http://cordvida.com.br/new/noticias-celulas-tronco/131-celulas-tronco-da-pele-podem-tratar-insuficiencia-cardiaca
+Redirect 301 /portal/novidades/noticias-celulas-tronco/item/67-c%C3%A9lulas-tronco-da-medula-%C3%B3ssea-permitem-tratar-insufici%C3%AAncia-card%C3%ADaca	http://cordvida.com.br/new/noticias-celulas-tronco/138-celulas-tronco-da-medula-ossea-permitem-tratar-insuficiencia-cardiaca
+Redirect 301 /portal/novidades/noticias-celulas-tronco/item/97-usp-planeja-criar-banco-de-c%C3%A9lulas-tronco-a-partir-de-agosto	http://cordvida.com.br/new/noticias-celulas-tronco/130-usp-planeja-criar-banco-de-celulas-tronco-a-partir-de-agosto
+Redirect 301 /portal/novidades/noticias-celulas-tronco/item/69-escudo-de-celulas-tronco-pode-proteger-pacientes-de-efeitos-da-quimioterapia http://cordvida.com.br/new/noticias-celulas-tronco/137-escudo-de-celulas-tronco-pode-proteger-pacientes-de-efeitos-da-quimioterapia
+Redirect 301 /portal/novidades/noticias-celulas-tronco/item/45-g%C3%AAmeas-recebem-c%C3%A9lulas-tronco-de-um-s%C3%B3-cord%C3%A3o-umbilical http://cordvida.com.br/new/noticias-celulas-tronco/139-gemeas-recebem-celulas-tronco-de-um-so-cordao-umbilical
+Redirect 301 /portal/novidades/noticias-celulas-tronco/item/44-c%C3%A9lulas-tronco-completam-10-anos-com-aplica%C3%A7%C3%A3o-pr%C3%A1tica-na-medicina http://cordvida.com.br/new/noticias-celulas-tronco/140-celulas-tronco-completam-10-anos-com-aplicacao-pratica-na-medicina
+Redirect 301 /portal/novidades/noticias-celulas-tronco/item/43-terapia-com-c%C3%A9lulas-tronco-se-mostra-eficaz-para-tratar-pacientes-que-sofreram-ataque-cardC3%ADaco http://cordvida.com.br/new/noticias-celulas-tronco/43-terapia-com-celulas-tronco-se-mostra-eficaz-para-tratar-pacientes-que-sofreram-ataque-cardiaco
+Redirect 301 /portal/novidades/noticias-celulas-tronco/item/38-tratamento-pioneiro-com-c%C3%A9lulas-tronco-ajuda-a-recuperar-fraturas http://cordvida.com.br/new/noticias-celulas-tronco/39-tratamento-pioneiro-com-celulas-tronco-ajuda-a-recuperar-fraturas
+Redirect 301 /portal/novidades/noticias-celulas-tronco/item/39-grupo-mostra-potencial-de-c%C3%A9lulas-do-cord%C3%A3o-umbilical-para-tratar-les%C3%B5es-na-medula-espinhal http://cordvida.com.br/new/noticias-celulas-tronco/40-grupo-mostra-potencial-de-celulas-do-cordao-umbilical-para-tratar-lesoes-na-medula-espinhal
+Redirect 301 /portal/novidades/noticias-celulas-tronco/item/40-c%C3%A9lula-tronco-de-cord%C3%A3o-umbilical-atenua-diabetes-tipo-1-em-estudo http://cordvida.com.br/new/noticias-celulas-tronco/41-celula-tronco-de-cordao-umbilical-atenua-diabetes-tipo-1-em-estudo
+Redirect 301 /portal/novidades/noticias-celulas-tronco/item/135-c%C3%A9lulas-embrion%C3%A1rias-ser%C3%A3o-testadas-em-humanos-pela-primeira-vez-no-brasil http://cordvida.com.br/new/noticias-celulas-tronco/75-celulas-embrionarias-serao-testadas-em-humanos-pela-primeira-vez-no-brasil
+## End - Custom redirects
+
+##
+# Uncomment following line if your webserver's URL
+# is not directly related to physical file paths.
+# Update Your Joomla! Directory (just / for root).
+##
+
+# RewriteBase /
+
+## Begin - Joomla! core SEF Section.
+#
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+#
+# If the requested path and file is not /index.php and the request
+# has not already been internally rewritten to the index.php script
+RewriteCond %{REQUEST_URI} !^/index\.php
+# and the request is for something within the component folder,
+# or for the site root, or for an extensionless URL, or the
+# requested URL ends with one of the listed extensions
+RewriteCond %{REQUEST_URI} /component/|(/[^.]*|\.(php|html?|feed|pdf|vcf|raw))$ [NC]
+# and the requested path and file doesn't directly match a physical file
+RewriteCond %{REQUEST_FILENAME} !-f
+# and the requested path and file doesn't directly match a physical folder
+RewriteCond %{REQUEST_FILENAME} !-d
+# internally rewrite the request to the index.php script
+RewriteRule .* index.php [L]
+#
+## End - Joomla! core SEF Section.
+
+
+RewriteCond %{HTTP_USER_AGENT} .*\{.* [NC]
+RewriteRule .* - [F]

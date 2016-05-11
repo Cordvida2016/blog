@@ -1,0 +1,18 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 { font-family: "KreonRegular", Arial, Helvetica, sans-serif; }
+
+h1 { font-size: 40px; line-height: 40px; }
+h2 { font-size: 34px; line-height: 34px; }
+h3 { font-size: 22px; line-height: 22px; }
+h4 { font-size: 20px; line-height: 20px; }
+h5 { font-size: 18px; line-height: 18px; }
+h5 { font-size: 16px; line-height: 16px; }
+
+.quote h1 { line-height: 56px; font-size: 56px; }
+.quote h2 { line-height: 36px; font-size: 36px; }

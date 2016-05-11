@@ -1,0 +1,279 @@
+/*
+ * Name:			Grid
+ * Description:		Provides a responsive grid with fluid columns
+ *
+ * Component:		`uk-grid`
+ *
+ * Sub-objects:		`uk-width-*`
+ *					`uk-push-*`
+ *					`uk-pull-*`
+ *
+ * Modifiers:		`uk-grid-gutter`
+ *					`uk-grid-gutter-multirow`
+ *					`uk-grid-gutter-divider`
+ *					
+ * Preserve:		`uk-preserve`
+ *
+ * Used by:			Panel
+ *					Dropdown
+ *
+ ========================================================================== */
+
+
+/* Component
+ ========================================================================== */
+
+/*
+ * Micro clearfix
+ */
+
+.uk-grid:before,
+.uk-grid:after {
+	content: " ";
+	display: table;
+}
+
+.uk-grid:after { clear: both; }
+
+/*
+ * 1. Makes grid gutter more robust so that it can be used with other block elements like lists
+ */
+
+.uk-grid {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+
+/* Sub-object: `uk-width-*`
+ * The selectors are not limited by the `uk-grid` namespace for better reusability
+ ========================================================================== */
+
+[class*='uk-width-'] {
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*
+ * Create a tenths column grid with additional thirds and quarters
+ */
+
+/* Tenths, allows halves and fifths */
+.uk-width-10 { width: 10%; }
+.uk-width-20 { width: 20%; }
+.uk-width-30 { width: 30%; }
+.uk-width-40 { width: 40%; }
+.uk-width-50 { width: 50%; }
+.uk-width-60 { width: 60%; }
+.uk-width-70 { width: 70%; }
+.uk-width-80 { width: 80%; }
+.uk-width-90 { width: 90%; }
+.uk-width-100 { width: 100%; }
+
+/* Thirds */
+.uk-width-33 { width: 33.333%; }
+.uk-width-66 { width: 66.666%; }
+
+/* Quarters */
+.uk-width-25 { width: 25%; }
+.uk-width-75 { width: 75%; }
+
+/*
+ * 1. Allows to use `ul` or `p` elements as grid columns
+ * 2. Foats grid columns
+ */
+
+.uk-grid > [class*='uk-width-'] {
+	margin: 0; /* 1 */
+	float: left; /* 2 */
+}
+
+/*
+ * Remove margin from the last-child
+ */
+
+.uk-grid > [class*='uk-width-'] > :last-child { margin-bottom: 0; }
+
+
+/* Sub-object: `uk-push-*` and `uk-pull-*`
+ ========================================================================== */
+
+/*
+ * Grid source ordering
+ * Useful for narrow viewports because the grid will be linearized into the source order of the markup
+ */
+
+[class*='uk-push-'],
+[class*='uk-pull-'] { position: relative; }
+
+/*
+ * Push
+ */
+
+/* Tenths */
+.uk-push-10 { left: 10%; }
+.uk-push-20 { left: 20%; }
+.uk-push-30 { left: 30%; }
+.uk-push-40 { left: 40%; }
+.uk-push-50 { left: 50%; }
+.uk-push-60 { left: 60%; }
+.uk-push-70 { left: 70%; }
+.uk-push-80 { left: 80%; }
+.uk-push-90 { left: 90%; }
+
+/* Thirds */
+.uk-push-33 { left: 33.333%; }
+.uk-push-66 { left: 66.666%; }
+
+/* Quarters */
+.uk-push-25 { left: 25%; }
+.uk-push-75 { left: 75%; }
+
+/*
+ * Pull
+ */
+
+/* Tenths */
+.uk-pull-10 { left: -10%; }
+.uk-pull-20 { left: -20%; }
+.uk-pull-30 { left: -30%; }
+.uk-pull-40 { left: -40%; }
+.uk-pull-50 { left: -50%; }
+.uk-pull-60 { left: -60%; }
+.uk-pull-70 { left: -70%; }
+.uk-pull-80 { left: -80%; }
+.uk-pull-90 { left: -90%; }
+
+/* Thirds */
+.uk-pull-33 { left: -33.333%; }
+.uk-pull-66 { left: -66.666%; }
+
+/* Quarters */
+.uk-pull-25 { left: -25%; }
+.uk-pull-75 { left: -75%; }
+
+
+/* Modifier: `uk-grid-gutter`
+ ========================================================================== */
+
+/*
+ * Horizontal gutter
+ */
+
+.uk-grid-gutter { margin-left: -@grid-gutter-horizontal; }
+
+.uk-grid-gutter > [class*='uk-width-'] { padding-left: @grid-gutter-horizontal; }
+
+/*
+ * Vertical gutter
+ */
+
+[class*='uk-grid-gutter'] + [class*='uk-grid-gutter'] { margin-top: @grid-gutter-vertical; }
+
+
+/* Modifier: `uk-grid-gutter-multirow`
+ ========================================================================== */
+
+.uk-grid-gutter-multirow { margin-top: -@grid-gutter-vertical; }
+
+.uk-grid-gutter-multirow > [class*='uk-width-'] { margin-top: @grid-gutter-vertical; }
+
+
+/* Modifier: `uk-grid-gutter-divider`
+ ========================================================================== */
+
+/*
+ * Horizontal divider
+ * Does not work with `uk-push-*`, `uk-pull-*` or `uk-grid-gutter-multirow`
+ */
+
+.uk-grid-gutter-divider:not(:empty) {
+	margin-left: -@grid-gutter-horizontal;
+	margin-right: -@grid-gutter-horizontal;
+}
+
+.uk-grid-gutter-divider:not(:empty) > [class*='uk-width-'] {
+	padding-left: @grid-gutter-horizontal;
+	padding-right: @grid-gutter-horizontal;
+}
+
+.uk-grid-gutter-divider:not(:empty) > [class*='uk-width-']:nth-child(n+2) { border-left: 1px solid @grid-gutter-divider-border; }
+
+/*
+ * Vertical divider
+ * 1. Remove margin if a `hr` element is used
+ */
+
+.uk-grid-gutter-divider:empty {
+	margin-bottom: 0; /* 1 */
+	border-top: 1px solid @grid-gutter-divider-border;
+}
+
+
+/* Responsive
+ ========================================================================== */
+
+/* Only phones */
+@media (max-width: @breakpoint-mini-max) {
+
+	/*
+	 * Stack columns and take full width
+	 * Note: To prevent the responsive behavior use the `uk-preserve` class
+	 */
+
+	.uk-grid:not(.uk-preserve) > [class*='uk-width-'] { width: 100%; }
+
+	/* Reset Push/Pull */
+	.uk-grid:not(.uk-preserve) > [class*='uk-push-'],
+	.uk-grid:not(.uk-preserve) > [class*='uk-pull-'] {
+		position: static;
+		left: auto;
+	}
+
+	/* Vertical gutter */
+	.uk-grid-gutter:not(.uk-preserve) > [class*='uk-width-']:nth-child(n+2) { margin-top: @grid-gutter-vertical; }
+
+	/* Horizontal divider */
+	.uk-grid-gutter-divider:not(:empty):not(.uk-preserve) > [class*='uk-width-']:nth-child(n+2) { border-left: none; }
+
+}
+
+/* Only large screens */
+@media (min-width: @breakpoint-large) {
+
+	/*
+	 * Modifier: `uk-grid-gutter`
+	 */
+
+	/* Horizontal gutter */
+	.uk-grid-gutter:not(.uk-preserve-gutter) { margin-left: -@grid-gutter-large-horizontal; }
+	.uk-grid-gutter:not(.uk-preserve-gutter) > [class*='uk-width-'] { padding-left: @grid-gutter-large-horizontal; }
+
+	/* Vertical gutter */
+	[class*='uk-grid-gutter']:not(.uk-preserve-gutter) + [class*='uk-grid-gutter'] { margin-top: @grid-gutter-large-vertical; }
+
+	/*
+	 * Modifier: `uk-grid-gutter-multirow`
+	 */
+
+	.uk-grid-gutter-multirow:not(.uk-preserve-gutter) { margin-top: -@grid-gutter-large-vertical; }
+
+	.uk-grid-gutter-multirow:not(.uk-preserve-gutter) > [class*='uk-width-'] { margin-top: @grid-gutter-large-vertical; }
+
+	/*
+	 * Modifier: `uk-grid-gutter-divider`
+	 */
+
+	/* Horizontal gutter */
+	.uk-grid-gutter-divider:not(.uk-preserve-gutter):not(:empty) {
+		margin-left: -@grid-gutter-large-horizontal;
+		margin-right: -@grid-gutter-large-horizontal;
+	}
+
+	.uk-grid-gutter-divider:not(.uk-preserve-gutter):not(:empty) > [class*='uk-width-'] {
+		padding-left: @grid-gutter-large-horizontal;
+		padding-right: @grid-gutter-large-horizontal;
+	}
+
+}

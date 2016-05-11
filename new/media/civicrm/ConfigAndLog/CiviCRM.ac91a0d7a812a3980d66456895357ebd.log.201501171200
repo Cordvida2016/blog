@@ -1,0 +1,196 @@
+Jan 05 12:10:48  [info] $Fatal Error Details = Array
+(
+    [message] =>  is not of the type Positive
+    [code] => 
+)
+
+
+Jan 05 12:10:48  [info] $backTrace = #0 /var/www/html/new/administrator/components/com_civicrm/civicrm/CRM/Core/Error.php(387): CRM_Core_Error::backtrace("backTrace", TRUE)
+#1 /var/www/html/new/administrator/components/com_civicrm/civicrm/CRM/Utils/Type.php(250): CRM_Core_Error::fatal(" is not of the type Positive")
+#2 /var/www/html/new/administrator/components/com_civicrm/civicrm/CRM/Contact/Page/AJAX.php(862): CRM_Utils_Type::escape(NULL, "Positive")
+#3 [internal function](): CRM_Contact_Page_AJAX::dashboard()
+#4 /var/www/html/new/administrator/components/com_civicrm/civicrm/CRM/Core/Invoke.php(296): call_user_func((Array:2))
+#5 /var/www/html/new/administrator/components/com_civicrm/civicrm/CRM/Core/Invoke.php(75): CRM_Core_Invoke::runItem((Array:12))
+#6 /var/www/html/new/administrator/components/com_civicrm/civicrm/CRM/Core/Invoke.php(52): CRM_Core_Invoke::_invoke((Array:3))
+#7 /var/www/html/new/administrator/components/com_civicrm/civicrm.php(116): CRM_Core_Invoke::invoke((Array:3))
+#8 /var/www/html/new/administrator/components/com_civicrm/civicrm.php(40): civicrm_invoke()
+#9 /var/www/html/new/libraries/legacy/component/helper.php(355): require_once("/var/www/html/new/administrator/components/com_civicrm/civicrm.php")
+#10 /var/www/html/new/libraries/legacy/component/helper.php(335): JComponentHelper::executeComponent("/var/www/html/new/administrator/components/com_civicrm/civicrm.php")
+#11 /var/www/html/new/administrator/includes/application.php(165): JComponentHelper::renderComponent("com_civicrm")
+#12 /var/www/html/new/administrator/index.php(70): JAdministrator->dispatch()
+#13 {main}
+
+
+Jan 05 18:14:57  [info] $Fatal Error Details = Array
+(
+    [message] => You do not have permission to access this page
+    [code] => 
+)
+
+
+Jan 05 18:14:57  [info] $backTrace = #0 /var/www/html/new/administrator/components/com_civicrm/civicrm/CRM/Core/Error.php(387): CRM_Core_Error::backtrace("backTrace", TRUE)
+#1 /var/www/html/new/administrator/components/com_civicrm/civicrm/CRM/Utils/System/Joomla.php(597): CRM_Core_Error::fatal("You do not have permission to access this page")
+#2 /var/www/html/new/administrator/components/com_civicrm/civicrm/CRM/Utils/System.php(281): CRM_Utils_System_Joomla->permissionDenied()
+#3 /var/www/html/new/administrator/components/com_civicrm/civicrm/CRM/Core/Invoke.php(252): CRM_Utils_System::permissionDenied()
+#4 /var/www/html/new/administrator/components/com_civicrm/civicrm/CRM/Core/Invoke.php(75): CRM_Core_Invoke::runItem((Array:12))
+#5 /var/www/html/new/administrator/components/com_civicrm/civicrm/CRM/Core/Invoke.php(52): CRM_Core_Invoke::_invoke((Array:3))
+#6 /var/www/html/new/administrator/components/com_civicrm/civicrm.php(116): CRM_Core_Invoke::invoke((Array:3))
+#7 /var/www/html/new/administrator/components/com_civicrm/civicrm.php(40): civicrm_invoke()
+#8 /var/www/html/new/libraries/legacy/component/helper.php(355): require_once("/var/www/html/new/administrator/components/com_civicrm/civicrm.php")
+#9 /var/www/html/new/libraries/legacy/component/helper.php(335): JComponentHelper::executeComponent("/var/www/html/new/administrator/components/com_civicrm/civicrm.php")
+#10 /var/www/html/new/administrator/includes/application.php(165): JComponentHelper::renderComponent("com_civicrm")
+#11 /var/www/html/new/administrator/index.php(70): JAdministrator->dispatch()
+#12 {main}
+
+
+Jan 24 10:15:52  [info] $Fatal Error Details = Array
+(
+    [message] => You do not have permission to access this page
+    [code] => 
+)
+
+
+Jan 24 10:15:52  [info] $backTrace = #0 /var/www/html/new/administrator/components/com_civicrm/civicrm/CRM/Core/Error.php(387): CRM_Core_Error::backtrace("backTrace", TRUE)
+#1 /var/www/html/new/administrator/components/com_civicrm/civicrm/CRM/Utils/System/Joomla.php(597): CRM_Core_Error::fatal("You do not have permission to access this page")
+#2 /var/www/html/new/administrator/components/com_civicrm/civicrm/CRM/Utils/System.php(281): CRM_Utils_System_Joomla->permissionDenied()
+#3 /var/www/html/new/administrator/components/com_civicrm/civicrm/CRM/Core/Invoke.php(252): CRM_Utils_System::permissionDenied()
+#4 /var/www/html/new/administrator/components/com_civicrm/civicrm/CRM/Core/Invoke.php(75): CRM_Core_Invoke::runItem((Array:13))
+#5 /var/www/html/new/administrator/components/com_civicrm/civicrm/CRM/Core/Invoke.php(52): CRM_Core_Invoke::_invoke((Array:10))
+#6 /var/www/html/new/components/com_civicrm/civicrm.php(86): CRM_Core_Invoke::invoke((Array:10))
+#7 /var/www/html/new/components/com_civicrm/civicrm.php(11): civicrm_invoke()
+#8 /var/www/html/new/libraries/legacy/component/helper.php(355): require_once("/var/www/html/new/components/com_civicrm/civicrm.php")
+#9 /var/www/html/new/libraries/legacy/component/helper.php(335): JComponentHelper::executeComponent("/var/www/html/new/components/com_civicrm/civicrm.php")
+#10 /var/www/html/new/includes/application.php(220): JComponentHelper::renderComponent("com_civicrm")
+#11 /var/www/html/new/index.php(52): JSite->dispatch()
+#12 {main}
+
+
+Jan 24 10:16:12  [info] $IDS Detector Details = Array
+(
+    [0] => Array
+        (
+            [name] => amp;usg
+            [value] => AFQjCNF7Be41Lf7wSzoF6nqQYT7LwOYiCQ//administrator/components/com_civicrm/civicrm/packages/OpenFlashChart/php-ofc-library/ofc_upload_image.php
+            [page] => /new/component/civicrm/?task=civicrm/profile&reset=1&gid=14&amp;sa=U&amp;ei=Bo3DVIyDBsOiNsX9gpAD&amp;ved=0CCYQFjAE&amp;usg=AFQjCNF7Be41Lf7wSzoF6nqQYT7LwOYiCQ//administrator/components/com_civicrm/civicrm/packages/OpenFlashChart/php-ofc-library/ofc_upload_image.php
+            [userid] => 
+            [session] => gopj5e2nnquhbvcvtn9s4nrl04
+            [ip] => 10.248.5.11
+            [reaction] => 0
+            [impact] => 43
+        )
+
+    [1] => Array
+        (
+            [name] => usg
+            [value] => AFQjCNF7Be41Lf7wSzoF6nqQYT7LwOYiCQ//administrator/components/com_civicrm/civicrm/packages/OpenFlashChart/php-ofc-library/ofc_upload_image.php
+            [page] => /new/component/civicrm/?task=civicrm/profile&reset=1&gid=14&amp;sa=U&amp;ei=Bo3DVIyDBsOiNsX9gpAD&amp;ved=0CCYQFjAE&amp;usg=AFQjCNF7Be41Lf7wSzoF6nqQYT7LwOYiCQ//administrator/components/com_civicrm/civicrm/packages/OpenFlashChart/php-ofc-library/ofc_upload_image.php
+            [userid] => 
+            [session] => gopj5e2nnquhbvcvtn9s4nrl04
+            [ip] => 10.248.5.11
+            [reaction] => 0
+            [impact] => 43
+        )
+
+    [2] => Array
+        (
+            [name] => IDS_request_uri
+            [value] => /new/component/civicrm/?task=civicrm/profile&reset=1&gid=14&amp;sa=U&amp;ei=Bo3DVIyDBsOiNsX9gpAD&amp;ved=0CCYQFjAE&amp;usg=AFQjCNF7Be41Lf7wSzoF6nqQYT7LwOYiCQ//administrator/components/com_civicrm/civicrm/packages/OpenFlashChart/php-ofc-library/ofc_upload_image.php
+            [page] => /new/component/civicrm/?task=civicrm/profile&reset=1&gid=14&amp;sa=U&amp;ei=Bo3DVIyDBsOiNsX9gpAD&amp;ved=0CCYQFjAE&amp;usg=AFQjCNF7Be41Lf7wSzoF6nqQYT7LwOYiCQ//administrator/components/com_civicrm/civicrm/packages/OpenFlashChart/php-ofc-library/ofc_upload_image.php
+            [userid] => 
+            [session] => gopj5e2nnquhbvcvtn9s4nrl04
+            [ip] => 10.248.5.11
+            [reaction] => 0
+            [impact] => 43
+        )
+
+)
+
+
+Jan 31 08:08:55  [info] $Fatal Error Details = Array
+(
+    [message] => You do not have permission to access this page
+    [code] => 
+)
+
+
+Jan 31 08:08:55  [info] $backTrace = #0 /var/www/html/new/administrator/components/com_civicrm/civicrm/CRM/Core/Error.php(387): CRM_Core_Error::backtrace("backTrace", TRUE)
+#1 /var/www/html/new/administrator/components/com_civicrm/civicrm/CRM/Utils/System/Joomla.php(597): CRM_Core_Error::fatal("You do not have permission to access this page")
+#2 /var/www/html/new/administrator/components/com_civicrm/civicrm/CRM/Utils/System.php(281): CRM_Utils_System_Joomla->permissionDenied()
+#3 /var/www/html/new/administrator/components/com_civicrm/civicrm/CRM/Core/Invoke.php(252): CRM_Utils_System::permissionDenied()
+#4 /var/www/html/new/administrator/components/com_civicrm/civicrm/CRM/Core/Invoke.php(75): CRM_Core_Invoke::runItem((Array:13))
+#5 /var/www/html/new/administrator/components/com_civicrm/civicrm/CRM/Core/Invoke.php(52): CRM_Core_Invoke::_invoke((Array:10))
+#6 /var/www/html/new/components/com_civicrm/civicrm.php(86): CRM_Core_Invoke::invoke((Array:10))
+#7 /var/www/html/new/components/com_civicrm/civicrm.php(11): civicrm_invoke()
+#8 /var/www/html/new/libraries/legacy/component/helper.php(355): require_once("/var/www/html/new/components/com_civicrm/civicrm.php")
+#9 /var/www/html/new/libraries/legacy/component/helper.php(335): JComponentHelper::executeComponent("/var/www/html/new/components/com_civicrm/civicrm.php")
+#10 /var/www/html/new/includes/application.php(220): JComponentHelper::renderComponent("com_civicrm")
+#11 /var/www/html/new/index.php(52): JSite->dispatch()
+#12 {main}
+
+
+Jan 31 08:08:56  [info] $Fatal Error Details = Array
+(
+    [message] => You do not have permission to access this page
+    [code] => 
+)
+
+
+Jan 31 08:08:56  [info] $backTrace = #0 /var/www/html/new/administrator/components/com_civicrm/civicrm/CRM/Core/Error.php(387): CRM_Core_Error::backtrace("backTrace", TRUE)
+#1 /var/www/html/new/administrator/components/com_civicrm/civicrm/CRM/Utils/System/Joomla.php(597): CRM_Core_Error::fatal("You do not have permission to access this page")
+#2 /var/www/html/new/administrator/components/com_civicrm/civicrm/CRM/Utils/System.php(281): CRM_Utils_System_Joomla->permissionDenied()
+#3 /var/www/html/new/administrator/components/com_civicrm/civicrm/CRM/Core/Invoke.php(252): CRM_Utils_System::permissionDenied()
+#4 /var/www/html/new/administrator/components/com_civicrm/civicrm/CRM/Core/Invoke.php(75): CRM_Core_Invoke::runItem((Array:13))
+#5 /var/www/html/new/administrator/components/com_civicrm/civicrm/CRM/Core/Invoke.php(52): CRM_Core_Invoke::_invoke((Array:10))
+#6 /var/www/html/new/components/com_civicrm/civicrm.php(86): CRM_Core_Invoke::invoke((Array:10))
+#7 /var/www/html/new/components/com_civicrm/civicrm.php(11): civicrm_invoke()
+#8 /var/www/html/new/libraries/legacy/component/helper.php(355): require_once("/var/www/html/new/components/com_civicrm/civicrm.php")
+#9 /var/www/html/new/libraries/legacy/component/helper.php(335): JComponentHelper::executeComponent("/var/www/html/new/components/com_civicrm/civicrm.php")
+#10 /var/www/html/new/includes/application.php(220): JComponentHelper::renderComponent("com_civicrm")
+#11 /var/www/html/new/index.php(52): JSite->dispatch()
+#12 {main}
+
+
+Jan 31 08:08:57  [info] $Fatal Error Details = Array
+(
+    [message] => You do not have permission to access this page
+    [code] => 
+)
+
+
+Jan 31 08:08:57  [info] $backTrace = #0 /var/www/html/new/administrator/components/com_civicrm/civicrm/CRM/Core/Error.php(387): CRM_Core_Error::backtrace("backTrace", TRUE)
+#1 /var/www/html/new/administrator/components/com_civicrm/civicrm/CRM/Utils/System/Joomla.php(597): CRM_Core_Error::fatal("You do not have permission to access this page")
+#2 /var/www/html/new/administrator/components/com_civicrm/civicrm/CRM/Utils/System.php(281): CRM_Utils_System_Joomla->permissionDenied()
+#3 /var/www/html/new/administrator/components/com_civicrm/civicrm/CRM/Core/Invoke.php(252): CRM_Utils_System::permissionDenied()
+#4 /var/www/html/new/administrator/components/com_civicrm/civicrm/CRM/Core/Invoke.php(75): CRM_Core_Invoke::runItem((Array:13))
+#5 /var/www/html/new/administrator/components/com_civicrm/civicrm/CRM/Core/Invoke.php(52): CRM_Core_Invoke::_invoke((Array:10))
+#6 /var/www/html/new/components/com_civicrm/civicrm.php(86): CRM_Core_Invoke::invoke((Array:10))
+#7 /var/www/html/new/components/com_civicrm/civicrm.php(11): civicrm_invoke()
+#8 /var/www/html/new/libraries/legacy/component/helper.php(355): require_once("/var/www/html/new/components/com_civicrm/civicrm.php")
+#9 /var/www/html/new/libraries/legacy/component/helper.php(335): JComponentHelper::executeComponent("/var/www/html/new/components/com_civicrm/civicrm.php")
+#10 /var/www/html/new/includes/application.php(220): JComponentHelper::renderComponent("com_civicrm")
+#11 /var/www/html/new/index.php(52): JSite->dispatch()
+#12 {main}
+
+
+Jan 31 08:08:58  [info] $Fatal Error Details = Array
+(
+    [message] => You do not have permission to access this page
+    [code] => 
+)
+
+
+Jan 31 08:08:58  [info] $backTrace = #0 /var/www/html/new/administrator/components/com_civicrm/civicrm/CRM/Core/Error.php(387): CRM_Core_Error::backtrace("backTrace", TRUE)
+#1 /var/www/html/new/administrator/components/com_civicrm/civicrm/CRM/Utils/System/Joomla.php(597): CRM_Core_Error::fatal("You do not have permission to access this page")
+#2 /var/www/html/new/administrator/components/com_civicrm/civicrm/CRM/Utils/System.php(281): CRM_Utils_System_Joomla->permissionDenied()
+#3 /var/www/html/new/administrator/components/com_civicrm/civicrm/CRM/Core/Invoke.php(252): CRM_Utils_System::permissionDenied()
+#4 /var/www/html/new/administrator/components/com_civicrm/civicrm/CRM/Core/Invoke.php(75): CRM_Core_Invoke::runItem((Array:13))
+#5 /var/www/html/new/administrator/components/com_civicrm/civicrm/CRM/Core/Invoke.php(52): CRM_Core_Invoke::_invoke((Array:10))
+#6 /var/www/html/new/components/com_civicrm/civicrm.php(86): CRM_Core_Invoke::invoke((Array:10))
+#7 /var/www/html/new/components/com_civicrm/civicrm.php(11): civicrm_invoke()
+#8 /var/www/html/new/libraries/legacy/component/helper.php(355): require_once("/var/www/html/new/components/com_civicrm/civicrm.php")
+#9 /var/www/html/new/libraries/legacy/component/helper.php(335): JComponentHelper::executeComponent("/var/www/html/new/components/com_civicrm/civicrm.php")
+#10 /var/www/html/new/includes/application.php(220): JComponentHelper::renderComponent("com_civicrm")
+#11 /var/www/html/new/index.php(52): JSite->dispatch()
+#12 {main}
+
+

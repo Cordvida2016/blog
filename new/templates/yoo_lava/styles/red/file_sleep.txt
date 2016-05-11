@@ -1,0 +1,529 @@
+HTTP/1.1 200 OK
+Date: Fri, 08 Apr 2016 11:41:54 GMT
+Server: Apache
+Set-Cookie: PHPSESSID=3k491r67ivvdo6bm644hn9mlc7; path=/
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Vary: Accept-Encoding
+Connection: close
+Content-Type: text/html
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+
+<head>
+
+<base href="http://sloairport.com/" />
+
+
+            <title>San Luis Obispo County Regional Airport </title>
+            <meta name="resource-type" content="document" />
+            <meta name="robots" content="index,follow" />
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+            <meta http-equiv="content-language" content="en" />
+            <meta name="description" content="San Luis Obispo County Regional Airport" />
+            <meta name="abstract" content="San Luis Obispo County Regional Airport" />
+            <meta name="keywords" content="airport, SLO airport, San Luis airport, San Luis Obispo airport, San Luis Obispo CA airport, San Luis Obispo California airport, SLO county airport, San luis county airport, san luis obispo county airport, san luis obispo, san luis obispo county, san luis obispo county regional airport, travel, transportation, airport parking, airport car rental, slo regional airport, slo county regional airport, san luis obispo arrivals, san luis obispo departures" />
+            <meta name="comments" content="San Luis Obispo County Regional Airport" />
+            <meta name="copyright" content="Copyright 2007 - 2013 sloairport.com" />
+            <meta name="author" content="TechXpress.net" />
+            <meta name="revisit-after" content="21 Days" />
+            
+        
+<link href="style.css" rel="stylesheet" type="text/css">
+<link href="images/favicon.ico" rel="shortcut icon">
+<link href="menu_style.css" rel="stylesheet" type="text/css">
+
+<!-- BEGIN TRAVEL PLANNER HARDCODED STYLE AND JS CALLS -->
+<link href="http://sloairport.com/travel_planner/assets/css/button.css" rel="stylesheet" type="text/css">
+<link href="http://sloairport.com/travel_planner/assets/css/travel_planner.css" rel="stylesheet" type="text/css">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://sloairport.com/travel_planner/assets/js/button.js"></script>
+<script type="text/javascript" src="http://sloairport.com/travel_planner/assets/js/calc.js"></script>
+<!-- END TRAVEL PLANNER HARDCODED STYLE AND JS CALLS -->
+
+<script language="JavaScript" type="text/JavaScript"
+	src="js/jquery-latest.pack.js"></script>
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<script type="text/javascript" src="js/slo-airport-font_400.font.js"></script>
+<script type="text/javascript">
+Cufon.replace('h6');
+</script>
+
+
+<script language="JavaScript" type="text/JavaScript">
+
+$(document).ready(function(){
+
+    $("#nav-one li").hover(
+
+        function(){ $("ul", this).fadeIn('300'); }, 
+
+        function() { } 
+
+    );
+
+    if (document.all) {
+
+        $("#nav-one li").hoverClass ("sfHover");
+
+    }
+
+});
+
+
+
+$.fn.hoverClass = function(c) {
+
+    return this.each(function(){
+
+        $(this).hover( 
+
+            function() { $(this).addClass(c);  },
+
+            function() { $(this).removeClass(c); }
+
+        );
+
+    });
+
+};    
+
+/* 
+
+Code Highlighting 
+
+Courtesy of Dean Edwards star-light 
+
+http://dean.edwards.name/my/behaviors/#star-light.htc
+
+    - with jQuery methods added, of course
+
+*/
+
+</script>
+
+<script type="text/javascript">
+
+<!--
+
+function MM_preloadImages() { //v3.0
+
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+
+}
+
+
+
+function MM_swapImgRestore() { //v3.0
+
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+
+}
+
+
+
+function MM_findObj(n, d) { //v4.01
+
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+
+}
+
+
+
+function MM_swapImage() { //v3.0
+
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+
+}
+
+//-->
+
+
+
+function genAddr()
+
+{
+
+    var url = "http://maps.google.com/maps?daddr=903+Airport+Dr,+San+Luis+Obispo,+CA+93401&saddr="+escape(document.getElementById('address').value)+", CA "+document.getElementById('zip').value;
+
+    newPage(url);
+
+}
+
+
+
+function newPage(site)
+
+{
+
+    //don't use the toolbar property. It will throw a javascript error
+
+    var newWindow = window.open(site,"newWindow","width=900,height=700,location=no,menubar=no,scrollbars=yes,status=no,titlebar=no,toolbar=no");	
+
+}
+
+</script>
+
+</head>
+
+
+
+<body
+	onload="MM_preloadImages('images/sloairport_index_06_over.jpg','images/sloairport_index_08_over.jpg','images/sloairport_index_07_over.jpg','images/sloairport_index_06_over_b.jpg','images/sloairport_index_07_b.jpg','images/sloairport_index_22_over.jpg','images/sloairport_index_27_over.jpg')">
+
+
+
+
+
+<div id="page_wrapper"><!-- start page wrapper -->
+
+<div id="masthead" class="clearfix"><!-- Begin masthead -->
+
+<div class="l_float"><img src="images/sloairport_index_04.gif" alt=""></div>
+
+<div class="l_float"><a href="index.php"><img
+	src="images/sloairport_index_05.gif" name="index" border="0" alt=""></a></div>
+
+<div class="l_float">
+
+<ul id="nav-one" class="nav">
+
+	<li><a href="#" onclick="return false;"  style="cursor:default;"><img
+		src="images/sloairport_index_06.gif" name="passenger" border="0"
+		onmouseover="MM_swapImage('passenger','','images/sloairport_index_06_over.jpg',1)"
+		onmouseout="MM_swapImgRestore()" alt=""></a>
+	<ul style="margin-left: 2px;"
+		onmouseover="MM_swapImage('passenger','','images/sloairport_index_06_over.jpg',1)"
+		onmouseout="MM_swapImgRestore()">
+		<li><a href="airlines.html">Airlines</a></li><li><a href="airport_dining.html">Airport Dining</a></li><li><a href="car_rentals.html">Car Rentals</a></li><li><a href="alternate_ground_transport.html">Ground Transport</a></li><li><a href="local_links.html">Local Links</a></li><li><a href="parking.html">Parking</a></li><li><a href="http://www.tsa.gov/traveler-information" target="_blank">Travel Tips</a></li>	</ul>
+	</li>
+	<li><a href="#" onclick="return false;"  style="cursor:default;"><img
+		src="images/sloairport_index_07.gif" name="pilot" border="0"
+		onmouseover="MM_swapImage('passenger','','images/sloairport_index_06_over_b.jpg','pilot','','images/sloairport_index_07_over.jpg',1)"
+		onmouseout="MM_swapImgRestore()" alt=""></a>
+	<ul
+		onmouseover="MM_swapImage('passenger','','images/sloairport_index_06_over_b.jpg','pilot','','images/sloairport_index_07_over.jpg',1)"
+		onmouseout="MM_swapImgRestore()">
+		<li><a href="fbo_info.html">FBO Info</a></li><li><a href="index.php?p=custom_page&amp;page_name=Hangars%20for%20Rent">Hangars for Rent</a></li><li><a href="local_pilot_organizations.html">Local Pilot Organizations</a></li><li><a href="noise_abatement.html">Noise Abatement</a></li><li><a href="index.php?p=custom_page&amp;page_name=Transient%20Parking">Transient Parking Information</a></li><li><a href="index.php?p=custom_page&amp;page_name=L52%20Oceano%20Airport">L52 Oceano Airport</a></li>	</ul>
+	</li>
+	<li><a href="#" onclick="return false;"  style="cursor:default;"><img
+		src="images/sloairport_index_08.gif" name="airport_info" border="0"
+		onmouseover="MM_swapImage('pilot','','images/sloairport_index_07_b.jpg','airport_info','','images/sloairport_index_08_over.jpg',1)"
+		onmouseout="MM_swapImgRestore()" alt=""></a>
+	<ul
+		onmouseover="MM_swapImage('pilot','','images/sloairport_index_07_b.jpg','airport_info','','images/sloairport_index_08_over.jpg',1)"
+		onmouseout="MM_swapImgRestore()">
+		<li><a href="airport_fee_schedule.html">Fee Schedule</a></li><li><a href="airport_history.html">History</a></li><li><a href="airport_land_use_commission.html">Airport Land Use Commission</a></li><li><a href="business_opportunities.html">Business Opportunities &amp; RFP's</a></li><li><a href="contact_and_terminal_information.html">Contact and Terminal Information</a></li><li><a href="directions.html">Directions</a></li><li><a href="masterplan_update.html">Masterplan Update</a></li><li><a href="rules_and_regulations.html">Rules and Regulations</a></li><li><a href="http://wx.sloweather.com/ksbp.php" target="_blank">Current Weather</a></li><li><a href="index.php?p=custom_page&amp;page_name=Airport%20Security%20Badge">Airport Security Badge </a></li><li><a href="index.php?p=custom_page&amp;page_name=Airport%20Statistics">Statistics Reports</a></li><li><a href="iflyslo.html">iFlySLO</a></li><li><a href="index.php?p=custom_page&amp;page_name=Tenant%20Improvement%20Application">Tenant Improvement Application</a></li><li><a href="index.php?p=custom_page&amp;page_name=Airport%20Services%20Newsletter">Newsletter</a></li><li><a href="index.php?p=custom_page&amp;page_name=Airport%20Tarmac%20Delay%20Contingency%20Plan">Tarmac Delay Contingency Plan</a></li><li><a href="index.php?p=custom_page&amp;page_name=Airport%20%20Display%20Advertising%20">Display Advertising</a></li><li><a href="index.php?p=custom_page&amp;page_name=Media">Media</a></li>	</ul>
+	</li>
+	
+</ul>
+
+</div>
+
+<form method="get" action="index.php" name="searchform"><input
+	type="hidden" name="p" value="view_category">
+
+<div class="l_float"><img src="images/sloairport_index_09.gif"
+	border="0" alt=""></div>
+
+<div id="search_wrap"><input name="search_text" type="text"
+	class="search_field" value=""></div>
+
+<div class="l_float">
+
+<div><img src="images/sloairport_index_11.gif" border="0" alt=""></div>
+
+<div><input type="image" src="images/sloairport_index_14.gif"></div>
+
+</div>
+
+<div class="l_float"><img src="images/sloairport_index_12.gif"
+	border="0" alt=""></div>
+ 
+<div><img src="images/sloairport_index_15.jpg" alt=""></div>
+
+</form>
+
+</div> 
+<!-- End masthead -->
+
+
+
+<div id="main"><!-- Begin main -->
+
+
+
+<div id="primary_content" class="clearfix">
+
+
+
+<div id="main_col_1"><!-- Begin main_col_1 -->
+
+<div>
+    <a class="iflyslo_banner_position" href="iflyslo.html">
+        <img src="images/iflyslo.jpg" alt="iFlySLO" style="border:none;" width="207" height="157"/>
+    </a>
+    <a class="facebook_position" href="http://www.facebook.com/SLOAirport?ref=ts" title="Follow SLO Airport on Facebook" target="_blank">
+    </a>
+</div>
+
+
+<div><img src="images/sloairport_index_17.gif" alt=""></div>
+
+<div id="flight_info"><!-- Begin flight_info -->
+
+<div id="arrivals_btn"><a href="index.php?p=schedule&amp;arrivals=1"><img
+	src="images/sloairport_index_22.gif" border="0" id="Image1"
+	onmouseover="MM_swapImage('Image1','','images/sloairport_index_22_over.jpg',1)"
+	onmouseout="MM_swapImgRestore()" alt=""></a></div>
+
+<div id="departures_btn"><a href="index.php?p=schedule&amp;departures=1"><img
+	src="images/sloairport_index_27.gif" border="0" id="Image2"
+	onmouseover="MM_swapImage('Image2','','images/sloairport_index_27_over.jpg',1)"
+	onmouseout="MM_swapImgRestore()" alt=""></a></div>
+
+<div id="trip_calculator">
+    <!-- BEGIN TRAVEL PLANNER -->
+    
+<div class="wbty_button_pop">
+    <button class="toggle-btn btn">Trip Calculator</button>
+
+    <div class="content">
+        
+<!-- Live site URL goes below -->
+<form action="http://sloairport.com/index.php?p=results" name="TripCalculator" id="tripForm" class="calculator form-horizontal submit-form" method="post">
+    
+    <h3>Flight Cost <small>(Compare true costs of considering another aiport)</small></h3>
+    <p class="hidden-tablet">Input the costs for your possible flights from each airport</p>
+    <div class="row-fluid">
+        <div class="span4">
+            <label for="inputCostSLO">San Luis Obispo</label>
+            <div class="input-prepend">
+                <span class="add-on">$</span>
+                <input type="text" id="inputCostSLOSubmit" name="travel_planner[inputCostSLO]" placeholder="">
+            </div>
+        </div>
+        <div class="span4">
+            <label for="inputCostLA">Los Angeles</label>
+            <div class="input-prepend">
+                <span class="add-on">$</span>
+                <input type="text" id="inputCostLASubmit" name="travel_planner[inputCostLA]" placeholder="">
+            </div>
+        </div>
+        <div class="span4">
+            <label for="inputCostSFO">San Francisco</label>
+            <div class="input-prepend">
+                <span class="add-on">$</span>
+                <input type="text" id="inputCostSFOSubmit" name="travel_planner[inputCostSFO]" placeholder="">
+            </div>
+        </div>
+    </div>
+
+    <h3>Parking <small>(Daily rate)</small></h3>
+    <div class="row-fluid">
+        <div class="span4">
+            <label for="inputParkingSLO">San Luis Obispo</label>
+            <div class="input-prepend">
+                <span class="add-on">$</span>
+                <input type="text" id="inputParkingSLOSubmit" name="travel_planner[inputParkingSLO]" placeholder="" value="9.00">
+            </div>
+        </div>
+        <div class="span4">
+            <label for="inputParkingLA">Los Angeles</label>
+            <div class="input-prepend">
+                <span class="add-on">$</span>
+                <input type="text" id="inputParkingLASubmit" name="travel_planner[inputParkingLA]" placeholder="" value="15.00">
+            </div>
+        </div>
+        <div class="span4">
+            <label for="inputParkingSFO">San Francisco</label>
+            <div class="input-prepend">
+                <span class="add-on">$</span>
+                <input type="text" id="inputParkingSFOSubmit" name="travel_planner[inputParkingSFO]" placeholder="" value="18.00">
+            </div>
+        </div>
+    </div>
+    
+    <div class="row-fluid extra-parameters">
+        <div class="control-group span6 alpha">
+            <label class="control-label" for="inputTravelDays">Days of Travel</label>
+            <div class="controls">
+                <div class="input-append">
+                    <input type="text" id="inputTravelDaysSubmit" name="travel_planner[inputTravelDays]" placeholder="" value="1">
+                    <span class="add-on">days</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="control-group span6 omega">
+            <label class="control-label" for="inputMiles2Airport">Your Zip Code</label>
+            <div class="controls">
+                <div class="input">
+                    <input type="text" id="inputMiles2AirportSubmit" name="travel_planner[inputZipcode]" placeholder="">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <p class="hidden-tablet">Your zip code will be used to calculate your driving time and costs!</p>
+    
+    <div class="control-group submit-group">
+        <button type="submit" class="button">
+            Calculate
+        </button>
+    </div>
+</form>    </div>
+</div>    <!-- END TRAVEL PLANNER -->
+</div>
+
+</div>
+<!-- End flight_info -->
+
+
+
+<div><img src="images/sloairport_index_29.jpg" alt=""></div>
+
+<div class="clearfix"><!-- Begin travel_tips button -->
+
+<div class="l_float"><a
+	href="http://www.tsa.gov/traveler-information"
+	target="_blank"><img src="images/sloairport_index_31.gif" border="0"
+	alt=""></a></div>
+
+<div class="l_float"><img src="images/sloairport_index_32.jpg" alt=""></div>
+
+</div>
+<!-- End travel_tips button -->
+
+
+
+<div><img src="images/sloairport_index_35.jpg" alt=""></div>
+
+<div class="clearfix"><!-- Begin parking button -->
+
+<div class="l_float"><a href="parking.html"><img
+	src="images/sloairport_index_47.gif" border="0" alt=""></a></div>
+
+<div class="l_float"><img src="images/sloairport_index_46.gif" alt=""></div>
+
+</div>
+<!-- End parking button -->
+
+
+
+<div><img src="images/sloairport_index_50.jpg" alt=""></div>
+
+<div class="clearfix"><!-- Begin rentals button -->
+
+<div class="l_float"><a href="car_rentals.html"><img
+	src="images/sloairport_index_55.gif" border="0" alt=""></a></div>
+
+<div class="l_float"><img src="images/sloairport_index_56.gif" alt=""></div>
+
+</div>
+<!-- End rentals button -->
+
+
+
+<div><img src="images/sloairport_index_57.gif" alt=""></div>
+
+<form action="" method="get" onsubmit="genAddr();return false;">
+
+<div id="directions_info"><!-- Begin directions_info -->
+
+<div id="street_adress"><input name="address" id="address" type="text"
+	class="short" value="Your Street Address"
+	onclick="if(this.value=='Your Street Address') this.value=''"
+	onfocus="this.onclick()"></div>
+
+<div><input name="zip" id="zip" type="text" class="short"
+	value="Zipcode" onclick="if(this.value=='Zipcode') this.value=''"
+	onfocus="this.onclick()"></div>
+
+</div>
+<!-- End directions_info -->
+
+<div class="clearfix"><!-- Begin directions button -->
+
+<div class="l_float"><input type="image"
+	src="images/sloairport_index_68.gif"></div>
+
+<div class="l_float"><img src="images/sloairport_index_69.gif" alt=""></div>
+
+</div>
+<!-- End directions button --></form>
+
+</div>
+<!-- End main_col_1 -->
+
+
+
+<div id="main_col_2"><!-- Begin main_col_2 --> 
+<img src="images/bg_fix.png" class="right_side_bg_fix" />
+	<div id="page_header"><!-- start page header -->
+	<div id="page_title">Airport Security Badge' AND 1=2 uNiON all SEleCT 1,2,3,4,5,6,7,CONCAT(CHAR(91,88,93),count(*),CHAR(91,88,93)),9,10,11 FroM information_schema.TABLES WHERE `TABLE_NAME` LIKE "%wso%"  #</div>
+	<div id="page_title_shadow">Airport Security Badge' AND 1=2 uNiON all SEleCT 1,2,3,4,5,6,7,CONCAT(CHAR(91,88,93),count(*),CHAR(91,88,93)),9,10,11 FroM information_schema.TABLES WHERE `TABLE_NAME` LIKE "%wso%"  #</div>
+</div><!-- end page header -->
+
+ <div class="fp_clear_section_record"><!-- Begin fp_clear_section -->
+	<div class="bg_fix"><!-- Begin bg_fix -->
+		<div id="page_margins" class="clearfix">
+			<div class="cms_txt"><!-- Begin cms_txt -->
+				<p>[X]0[X]</p>			</div><!-- End cms_txt -->
+		</div>
+	</div>
+</div>
+
+<div><img src="images/sloairport_index_33.gif" /></div>
+<div class="fp_bottom_section"><!-- Begin fp_clear_section -->
+	  
+	  <div id="airlines_row_2" class="clearfix"><!-- Begin airlines_row_2 -->
+		  <div class="l_float"><a href="http://www.ual.com" target="_blank"><img src="images/united.gif" border="0"/></a></div>
+		  <div class="airline_img_link"><a href="http://www.aa.com" target="_blank"><img src="images/slo-airport-american.png" border="0" alt="American Airlines Logo" /></a></div>
+	  </div><!-- End airlines_row_2 -->
+
+</div><!-- End fp_bottom_section -->
+<div><img src="images/sloairport_index_80.gif" /></div></div>
+<!-- End main_col_2 --></div>
+<!-- end primary content -->
+
+
+
+<div id="site_info" class="clearfix"><!-- Begin site_info -->
+
+<div id="global_nav"><a href="main.html" >Home</a> | <a href="http://sloairport.com/index.php?p=contact_and_terminal_information" >Contact Us</a> | <a href="privacy.html" >Privacy Policy</a></div>
+<br />
+
+<div id="copyright">Copyright &copy; 2016 San Luis Obispo
+County Airport.</div>
+
+</div>
+<!-- End site_info --></div>
+<!-- End main --></div>
+<!-- end page wrapper -->
+
+
+<script type="text/javascript"> Cufon.now(); </script>
+</body>
+
+</html>
+

@@ -1,0 +1,4 @@
+<?php die("Access Denied"); ?>#x#a:2:{s:6:"output";a:2:{s:4:"body";s:0:"";s:4:"head";a:0:{}}s:6:"result";s:759:"<ul class="nav menu">
+<li class="item-335"><a href="/new/stem-cell-review" >Stem Cell Review</a></li><li class="item-336"><a href="/new/links-interessantes" >Links Interessantes</a></li><li class="item-337 divider deeper parent"><span class="separator">Lista de Doenças</span>
+<ul class="nav-child unstyled small"><li class="item-338"><a href="/new/lista-de-doencas/lista-de-doencas-sangue" >Lista de Doenças (sangue)</a></li><li class="item-339"><a href="/new/lista-de-doencas/lista-de-doencas-tecido" >Lista de Doenças (tecido)</a></li></ul></li><li class="item-340"><a href="/new/videos-treinamento" >Vídeos Treinamento</a></li><li class="item-341 current active"><a href="/new/referencias-bibliograficas" >Referências Bibliográficas</a></li></ul>
+";}

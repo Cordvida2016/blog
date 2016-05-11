@@ -1,0 +1,245 @@
+HTTP/1.1 200 OK
+Server: nginx
+Date: Fri, 08 Apr 2016 18:04:31 GMT
+Content-Type: text/html
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+
+<br />
+<b>Warning</b>:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in <b>/home/boredatuni/webapps/htdocs/wht_found.php</b> on line <b>46</b><br />
+<br />
+<b>Warning</b>:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in <b>/home/boredatuni/webapps/htdocs/wht_found.php</b> on line <b>54</b><br />
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" prefix="og: http://ogp.me/ns#">
+<head>
+<title>What happened to ?</title>
+<link rel="author" href="https://plus.google.com/+Boredatuni/posts" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1" />
+<meta name="keywords" content=",where are they now,what happened to, information" />
+<meta name="description" content="If you have ever wondered what happened to , you can find out what  is doing now, right here!" />
+<meta name="robots" content="index,follow" />
+<script type="text/javascript" src="/scripts/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="/scripts/main.js"></script>
+<script type="text/javascript" src="/scripts/jquery-ui-1.8.custom.min.js"></script>
+<script type="text/javascript" src="/scripts/jquery-infinite-carousel.js"></script>
+<script type="text/javascript" src="/scripts/cufon-yui.js"></script>
+<script type="text/javascript" src="/scripts/Segoe_Script_400-Segoe_Script_700.font.js"></script>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-714626-1']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+<link href="/style/sunny/jquery-ui-1.8.custom.css" rel="stylesheet" type="text/css" />
+<link href="/style/screen.css" rel="stylesheet" type="text/css" />
+<link href="/style/mediaqueries.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=171523729539718";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="container">
+
+<div id="facebookLikeBoxBg"></div>
+<div id="facebookLikeBox">
+	<script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:like-box href="http://www.facebook.com/pages/BoredAtUni/162696687122105" width="160" height="80" show_faces="false" stream="false" header="false"></fb:like-box>
+</div>
+
+	<div id="header">
+    	<div id="logo"><a href="/"><img src="/images/logo.png" width="188" height="138" alt="Bored At Uni" border="0" /></a></div>
+		<div id="cheapMP3s"><a href="/cheap-legal-mp3s.php"><img src="/images/cheapmp3s.jpg" width="311" height="135" alt="Get cheap MP3s from only 5&cent; - Click here to find out how" /></a></div>
+		<div id="mobile-nav-toggle" onclick="toggleNav();"></div>
+	</div>
+	<div id="contentContainer">
+		<div id="lhs">
+			<div class="sideTitle">Bored? Check out...</div>
+			<div class="nav">
+				<ul>
+					<li><a href="/cheap-legal-mp3s.php"><b>Cheap, Legal MP3s!</b></a></li>
+					<li><a href="/apps.php">Apps You <b>Need</b>!</a></li>
+					<li><a href="/pictures.php">Funny Pictures</a></li>
+					<li><a href="/words.php">Funny Words</a></li>
+					<li><a href="/downloads.php">Funny Downloads</a></li>
+					<li><a href="/wht.php">What happened to...?</a></li>
+					<li><a href="/thingstodo.php">Things to do when bored</a></li>
+					<li><a href="/jokes.php">Jokes</a></li>
+					<li><a href="/stuff.php">Other Random Stuff</a></li>
+					<li><a href="/hot-students.php">Hot Students</a></li>
+					<li><a href="/links.php">Cool Sites</a></li>
+					<li><a href="/games.php">Games</a></li>
+					<li><a href="/student-jobs.php">Student Jobs</a></li>
+				</ul>
+			</div>
+			
+			<div id="soundikeAd">
+				<a href="http://www.soundike.com/index.php?pid=11" target="_blank"><img src="/images/banners/soundike.jpg" width="206" height="222" alt="Visit Soundike.com to download chart music for just $0.15 per song!" border="0" /></a>
+			</div>
+			
+						
+		</div>
+		<div id="content">
+					
+						<div class="note noteRight">
+							<div class="noteContent">
+								If you have any other information on , <a href="/wht_lost.php?whtId=">click here</a> to add it.
+							</div>
+						</div>					
+					<h1>What Happened To...</h1>
+
+										
+					<!-- Begin Page Content -->
+
+					<div id="twitterUpdates">
+							<span><a href="http://twitter.com/boredatuni" target="_blank"><strong>Follow us on Twitter</strong></a>...<br />and get updated when we add more information about !</span>
+						</div>
+						<div id="pageIntro" class="whtFoundPageIntro">
+							<p>
+								Below is information other people have submitted about ...
+							</p>
+							<p>
+								<i>All information on this page are the views and opinions of the submitter and do not necessarily reflect the views and opinions of BoredAtUni.com.</i>
+							</p>
+						</div><div id="whtfound">
+
+						
+						<div id="whtDetails">
+							<div class="whtPhoto" id="whtPhotoThen">
+								<span class="whtImgContainer">
+																	<span><img id="whtPhotoThenImg" class="clickable" src="/images/whtnoimage.jpg" alt="Submit a photo of what  used to look like" /></span>
+																</span>
+							</div>
+							<div id="whtDescription">
+								<p>
+									<strong>Errr.... Who?</strong> 								</p>
+															</div>
+							<div class="whtPhoto" id="whtPhotoNow">
+								<span class="whtImgContainer">
+																			<span><img id="whtPhotoNowImg" class="clickable" src="/images/whtnoimage.jpg" alt="Submit a photo of how  looks now" /></span>
+																	</span>
+							</div>
+						</div>
+						
+						</div>
+<div id="socialLinks">
+	<div id="socialLinksContent">
+	
+		<a href="https://twitter.com/share" class="twitter-share-button" data-via="BoredAtUni" data-count="none">Tweet</a>
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+				
+		<a href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href), 'facebook-share-dialog', 'width=626,height=436'); return false;">
+		  <img src="/images/facebook_share.gif" alt="Share on Facebook" />
+		</a>
+		
+		<div id="socialGooglePlus">
+			<div class="g-plusone" data-size="medium" data-annotation="none"></div>
+			<div class="g-plus" data-action="share" data-annotation="none"></div>
+		</div>
+		
+	</div>
+</div>
+					<!-- End Page Content -->
+
+					<iframe id="facebookLike" src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.boredatuni.com%2Fwht_found.php&amp;layout=standard&amp;show_faces=false&amp;width=320&amp;action=like&amp;colorscheme=light" scrolling="no" frameborder="0" allowTransparency="true" style="border:none; overflow:hidden; width:320px; height:42px;"></iframe>					
+					<div id="contentclick7421"></div>
+					<script type="text/javascript">
+						(function() {
+							var data =
+							{
+								pub_id: "3249",w_id: "7421",pw: "20ec73d7381fcd", cbust: (new Date()).getTime()
+							};
+							if (typeof widgetCheck7421 === 'undefined')   {
+								var u="";
+								for(var key in data){u+=key+"="+data[key]+"&"}
+								u=u.substring(0,u.length-1);		
+								var a = document.createElement("script");
+								a.type= 'text/javascript';
+								a.src = "https://api.contentclick.co.uk/pub_serve.php?" + u;
+								a.async = true;		
+								document.getElementById("contentclick7421").appendChild(a);
+							window.widgetCheck7421 = "set";
+							}
+						})();
+					</script>
+					
+				</div>
+				<div id="rhs">
+				
+										
+					<a href="/cheap-legal-mp3s.php"><img src="/images/banners/mp3banner.jpg" alt="Want to download the latest music from just 5 cents a track? Click here to find out how!" /></a>
+					
+					<div id="rhsTwitter">
+						Follow us on <a href="http://twitter.com/boredatuni" target="_blank"><img src="/images/twitter.gif" width="150" height="35" alt="Twitter" /></a>
+					</div>
+		
+				</div>
+						<div class="clearer"></div>
+		
+	</div>
+</div>
+
+<div id="footerContainer">
+	<div class="container" id="footer">
+		<div id="footerInner">
+			<ul>
+				<li id="footerLink1">&copy; BoredAtUni.com 2016</li>
+				<li id="footerLink2"><a href="/legal.php">Legal Stuff</a></li>
+				<li id="footerLink3"><a href="/privacy.php">Privacy Policy</a></li>
+				<li id="footerLink4"><a href="/refer-a-friend.php">Refer-a-Friend</a></li>
+				<li id="footerLink5"><a href="/sitemap.php">Site Map</a></li>
+				<li id="footerLink6"><a href="/contact.php">Contact Us</a></li>
+				<li id="footerLink7"><a href="/advertising.php">Advertise on BAU</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+
+<div id="newsletterRegForm">
+	<form action="" method="" onsubmit="return validateNewsletterRegForm();">
+		<div id="newsletterClose" onclick="hideNewsletterForm();">Close</div>
+		<p>
+			Hey! Want to receive funny stuff in
+			your inbox every week?<br /><br />
+			Then sign up here!
+		</p>
+		<input type="email" name="email" id="newsletter_email" placeholder="Enter your email address..." />
+		<button type="submit">Sign Up!</button>
+	</form>
+</div>
+
+<script type="text/javascript">
+Cufon.replace('#pageIntroText, .fontReplace');
+Cufon.now();
+
+(function() {
+var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+po.src = 'https://apis.google.com/js/platform.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+
+var po2 = document.createElement('script'); po2.type = 'text/javascript'; po2.async = true;
+po2.src = 'https://apis.google.com/js/plusone.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po2, s);
+
+})();
+</script>
+
+</body>
+</html>

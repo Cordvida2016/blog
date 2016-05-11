@@ -1,0 +1,2 @@
+<?php die("Access Denied"); ?>#x#a:2:{s:6:"output";a:2:{s:4:"body";s:0:"";s:4:"head";a:0:{}}s:6:"result";s:91:"
+<p><img src="images/yootheme/logo_cord.png" alt="logo cord" width="140" height="70" /></p>";}

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<install version="1.5" type="plugin" plugin="jlink" method="upgrade">
+	<name>JLink</name>
+	<version>2.0</version>
+	<creationDate>APRIL 2010</creationDate>
+	<author>WebxSolution Ltd</author>
+	<authorUrl>http://www.webxsolution.com</authorUrl>
+	<copyright>Copyright (C) 2010 - 2011 WebxSolution Ltd</copyright>
+	<license>GNU/GPLv2</license>
+	<description>Joomla Internal Search link JCK plugin</description>
+	<languages>
+	</languages>
+	<icon>images/jlink.gif</icon>
+	<files>	
+	<filename>plugin.js</filename>
+	<filename>index.html</filename>
+	<folder>images</folder>
+	<folder>lang</folder>
+    </files>
+	<params>
+		<param name="dialogtitle" type="text" default="JLink Properties" label="Dialog Title" description="The Title shown in the dialog for this plugin" />
+		<param name="height" type="text" default="350" label="Dialog height" description="The height of dialog" />
+		<param name="width" type="text" default="400" label="Dialog width" description="The width of dialog"/>
+	</params>
+</install>
